@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" preserveAspectRatio="xMidYMid meet" role="img" aria-label="VILLA MAÏA">
+  <text x="200" y="42" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-weight="500" font-size="22" letter-spacing="4" fill="#6E3D23">VILLA MAÏA</text>
+  <line x1="180" y1="50" x2="220" y2="50" stroke="#6E3D23" stroke-width="0.5" opacity="0.35"/>
+  <text x="200" y="64" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="500" font-size="8" letter-spacing="3" fill="#6E3D23" opacity="0.6">LYON · 5 ÉTOILES</text>
+</svg>

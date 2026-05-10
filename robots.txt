@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://senso-pur-group.com
+Sitemap: https://senso-pur-group.com/sitemap.xml
