@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Senso Pur 16 ans — 2010 à 2026">
+  <defs>
+    <linearGradient id="an-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6E3D23"/>
+      <stop offset="100%" stop-color="#9D7960"/>
+    </linearGradient>
+    <radialGradient id="an-glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#EEECE9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#EEECE9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#an-bg)"/>
+  <rect width="1200" height="800" fill="url(#an-glow)"/>
+
+  <!-- Senso Pur arche signature, large, centered top -->
+  <g transform="translate(600 230)" fill="none" stroke="#EEECE9" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
+    <path d="M -130 100 Q -130 -90 0 -90 Q 130 -90 130 100"/>
+    <path d="M -78 100 Q -78 -36 0 -36 Q 78 -36 78 100"/>
+    <line x1="-130" y1="100" x2="-130" y2="135"/>
+    <line x1="130"  y1="100" x2="130"  y2="135"/>
+    <line x1="-78"  y1="100" x2="-78"  y2="135"/>
+    <line x1="78"   y1="100" x2="78"   y2="135"/>
+  </g>
+
+  <!-- Big number 16 -->
+  <text x="600" y="500" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-weight="500" font-size="160" letter-spacing="-2" fill="#EEECE9">16</text>
+  <text x="600" y="540" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="600" font-size="13" letter-spacing="8" fill="#EEECE9" opacity="0.85">ANS · D'ENGAGEMENT INDUSTRIEL</text>
+
+  <!-- Timeline -->
+  <line x1="200" y1="660" x2="1000" y2="660" stroke="#EEECE9" stroke-width="1" opacity="0.5"/>
+
+  <!-- Year markers -->
+  <g font-family="'Manrope', sans-serif" font-weight="700" font-size="14" letter-spacing="3" fill="#EEECE9">
+    <g>
+      <circle cx="200" cy="660" r="8" fill="#99B3B7"/>
+      <text x="200" y="700" text-anchor="middle">2010</text>
+      <text x="200" y="720" text-anchor="middle" font-size="9" font-weight="500" letter-spacing="2" opacity="0.7">FONDATION</text>
+    </g>
+    <g>
+      <circle cx="400" cy="660" r="6" fill="#EEECE9"/>
+      <text x="400" y="700" text-anchor="middle">2017</text>
+      <text x="400" y="720" text-anchor="middle" font-size="9" font-weight="500" letter-spacing="2" opacity="0.7">M. AUBERTIN</text>
+    </g>
+    <g>
+      <circle cx="600" cy="660" r="6" fill="#EEECE9"/>
+      <text x="600" y="700" text-anchor="middle">2019</text>
+      <text x="600" y="720" text-anchor="middle" font-size="9" font-weight="500" letter-spacing="2" opacity="0.7">VAULX-MILIEU</text>
+    </g>
+    <g>
+      <circle cx="800" cy="660" r="6" fill="#EEECE9"/>
+      <text x="800" y="700" text-anchor="middle">2024</text>
+      <text x="800" y="720" text-anchor="middle" font-size="9" font-weight="500" letter-spacing="2" opacity="0.7">BILAN CARBONE</text>
+    </g>
+    <g>
+      <circle cx="1000" cy="660" r="10" fill="#99B3B7"/>
+      <circle cx="1000" cy="660" r="18" fill="none" stroke="#99B3B7" stroke-width="1" opacity="0.5"/>
+      <text x="1000" y="700" text-anchor="middle">2026</text>
+      <text x="1000" y="720" text-anchor="middle" font-size="9" font-weight="500" letter-spacing="2" opacity="0.7">AUJOURD'HUI</text>
+    </g>
+  </g>
+
+  <!-- Top tag -->
+  <text x="600" y="100" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="600" font-size="11" letter-spacing="6" fill="#EEECE9" opacity="0.78">ANNIVERSAIRE · 2010 → 2026</text>
+</svg>

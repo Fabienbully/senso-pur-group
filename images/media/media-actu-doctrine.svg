@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Doctrine d'achat — sourcing transparent">
+  <defs>
+    <radialGradient id="dt-bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#EEECE9"/>
+      <stop offset="100%" stop-color="#E3D8C7"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#dt-bg)"/>
+
+  <!-- Latitude lines (subtle) -->
+  <g stroke="#9D7960" stroke-width="0.5" opacity="0.25" fill="none">
+    <line x1="100" y1="220" x2="1100" y2="220"/>
+    <line x1="100" y1="320" x2="1100" y2="320"/>
+    <line x1="100" y1="420" x2="1100" y2="420"/>
+    <line x1="100" y1="520" x2="1100" y2="520"/>
+    <line x1="100" y1="620" x2="1100" y2="620"/>
+  </g>
+  <!-- Longitude curves -->
+  <g stroke="#9D7960" stroke-width="0.5" opacity="0.25" fill="none">
+    <path d="M 600 150 Q 460 400 600 670"/>
+    <path d="M 600 150 Q 740 400 600 670"/>
+    <path d="M 600 150 Q 320 400 600 670"/>
+    <path d="M 600 150 Q 880 400 600 670"/>
+  </g>
+
+  <!-- Senso Pur HQ — France (center, larger) -->
+  <g>
+    <circle cx="540" cy="370" r="12" fill="#6E3D23"/>
+    <circle cx="540" cy="370" r="22" fill="none" stroke="#6E3D23" stroke-width="1.4" opacity="0.6"/>
+    <circle cx="540" cy="370" r="32" fill="none" stroke="#6E3D23" stroke-width="0.8" opacity="0.4"/>
+    <text x="540" y="345" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="700" font-size="11" letter-spacing="3" fill="#6E3D23">FRANCE</text>
+    <text x="540" y="408" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="500" font-size="9" letter-spacing="2" fill="#6E3D23" opacity="0.65">VAULX-MILIEU · HQ</text>
+  </g>
+
+  <!-- Partner countries (dots + lines from FR) -->
+  <g stroke="#99B3B7" stroke-width="1.2" stroke-dasharray="2 4" fill="none" opacity="0.65">
+    <line x1="540" y1="370" x2="490" y2="430"/>  <!-- ES -->
+    <line x1="540" y1="370" x2="615" y2="395"/>  <!-- IT -->
+    <line x1="540" y1="370" x2="555" y2="305"/>  <!-- BE -->
+    <line x1="540" y1="370" x2="640" y2="305"/>  <!-- PL -->
+    <line x1="540" y1="370" x2="850" y2="455"/>  <!-- IN -->
+    <line x1="540" y1="370" x2="945" y2="465"/>  <!-- VN -->
+    <line x1="540" y1="370" x2="975" y2="380"/>  <!-- CN -->
+  </g>
+
+  <g font-family="'Manrope', sans-serif" font-weight="600" font-size="10" letter-spacing="2" fill="#304E4D">
+    <g>
+      <circle cx="490" cy="430" r="6" fill="#9D7960"/>
+      <text x="450" y="453" text-anchor="end">ESPAGNE</text>
+    </g>
+    <g>
+      <circle cx="615" cy="395" r="6" fill="#9D7960"/>
+      <text x="650" y="395">ITALIE</text>
+    </g>
+    <g>
+      <circle cx="555" cy="305" r="6" fill="#9D7960"/>
+      <text x="555" y="290" text-anchor="middle">BELGIQUE</text>
+    </g>
+    <g>
+      <circle cx="640" cy="305" r="6" fill="#9D7960"/>
+      <text x="685" y="300">POLOGNE</text>
+    </g>
+    <g>
+      <circle cx="850" cy="455" r="6" fill="#9D7960"/>
+      <text x="850" y="478" text-anchor="middle">INDE</text>
+    </g>
+    <g>
+      <circle cx="945" cy="465" r="6" fill="#9D7960"/>
+      <text x="945" y="488" text-anchor="middle">VIETNAM</text>
+    </g>
+    <g>
+      <circle cx="975" cy="380" r="6" fill="#9D7960"/>
+      <text x="1010" y="385">CHINE</text>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="120" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="700" font-size="11" letter-spacing="6" fill="#6E3D23" opacity="0.78">DOCTRINE D'ACHAT · TRANSPARENCE RADICALE</text>
+  <text x="600" y="700" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="500" font-size="34" fill="#6E3D23">Pays par pays, partenaire après partenaire</text>
+  <text x="600" y="735" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="500" font-size="11" letter-spacing="3" fill="#304E4D" opacity="0.7">7 PAYS · 15 ANS DE PARTENARIATS · ANCIENNETÉS PUBLIÉES</text>
+</svg>
