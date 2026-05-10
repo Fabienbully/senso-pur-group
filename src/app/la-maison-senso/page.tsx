@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/sections/PageHero";
 import { PortraitLarge } from "@/components/sections/PortraitLarge";
-import { TextBlock } from "@/components/sections/TextBlock";
 import { CardsGrid } from "@/components/sections/CardsGrid";
 import { ManifesteQuote } from "@/components/sections/ManifesteQuote";
 import { ChiffresCles } from "@/components/sections/ChiffresCles";
+import { FadeIn } from "@/components/animations/FadeIn";
 
 export const metadata: Metadata = {
   title: "La Maison Senso",
@@ -32,16 +32,50 @@ export default function LaMaisonSenso() {
         caption="L'atelier — Vaulx-Milieu"
       />
 
-      <TextBlock
-        eyebrow="UNE MAISON, TROIS PUBLICS"
-        title="Une maison, trois publics"
-        body={`La Maison Senso est née en 2010 à Vaulx-Milieu, autour d'une conviction simple : on peut fabriquer en France des matelas qui durent, sans renoncer à l'accessibilité.
+      <section className="sp-section bg-[var(--sp-bg-soft)]">
+        <div className="sp-container">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <FadeIn className="lg:col-span-6">
+              <p className="sp-eyebrow mb-3">UNE MAISON, TROIS PUBLICS</p>
+              <h2 className="mb-6">Une maison, trois publics</h2>
+              <div className="space-y-4 text-[var(--sp-slate)] leading-relaxed text-lg">
+                <p>
+                  La Maison Senso est née en 2010 à Vaulx-Milieu, autour d&apos;une
+                  conviction simple : on peut fabriquer en France des matelas qui durent,
+                  sans renoncer à l&apos;accessibilité.
+                </p>
+                <p>
+                  Le groupe a été fondé par Fabien Bully avec son père, qui cumulait
+                  alors trente ans d&apos;expérience dans les matières premières de la
+                  literie. Père et fils ont travaillé ensemble jusqu&apos;en 2020, année où
+                  le père a pris une retraite bien méritée à 71 ans. Le savoir-faire,
+                  lui, est resté.
+                </p>
+                <p>
+                  Au fil des années, ce savoir-faire s&apos;est élargi. Des matelas
+                  hôteliers de Bellecour aux matelas sur-mesure de Matelas Pour Tous, en
+                  passant par la collection Olympe pour les sportifs — La Maison Senso a
+                  su servir trois publics avec la même exigence de fabrication.
+                </p>
+              </div>
+            </FadeIn>
 
-Le groupe a été fondé par Fabien Bully avec son père, qui cumulait alors trente ans d'expérience dans les matières premières de la literie. Père et fils ont travaillé ensemble jusqu'en 2020, année où le père a pris une retraite bien méritée à 71 ans. Le savoir-faire, lui, est resté.
-
-Au fil des années, ce savoir-faire s'est élargi. Des matelas hôteliers de Bellecour aux matelas sur-mesure de Matelas Pour Tous, en passant par la collection Olympe pour les sportifs — La Maison Senso a su servir trois publics avec la même exigence de fabrication.`}
-        bg="soft"
-      />
+            <FadeIn delay={150} className="lg:col-span-6">
+              <figure className="overflow-hidden rounded-[var(--sp-radius-lg)] bg-[var(--sp-obsidian)] aspect-[4/3]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/media/visuel-expertise-du-marche.jpg"
+                  alt="L'expertise du marché — l'équipe Senso Pur dans l'atelier de Vaulx-Milieu"
+                  className="w-full h-full object-cover"
+                />
+              </figure>
+              <figcaption className="mt-3 text-xs text-[var(--sp-bronze)] tracking-wide">
+                L&apos;expertise du marché — l&apos;équipe Senso Pur, atelier de Vaulx-Milieu
+              </figcaption>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
 
       <CardsGrid
         eyebrow="TROIS MARQUES, TROIS MARCHÉS"
