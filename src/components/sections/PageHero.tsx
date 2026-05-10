@@ -41,7 +41,7 @@ export function PageHero({ eyebrow, title, subtitle, crumbs, bgImage }: PageHero
         aria-hidden
         style={{
           background:
-            "linear-gradient(180deg, rgba(27,40,36,0.6) 0%, rgba(27,40,36,0.95) 100%)",
+            "linear-gradient(180deg, rgba(10,22,40,0.6) 0%, rgba(10,22,40,0.95) 100%)",
         }}
       />
       <div className="sp-grain -z-10" aria-hidden />
@@ -51,7 +51,7 @@ export function PageHero({ eyebrow, title, subtitle, crumbs, bgImage }: PageHero
           <FadeIn>
             <nav
               aria-label="Fil d'ariane"
-              className="text-xs tracking-wide text-[rgba(238,236,233,0.6)] mb-8 flex items-center gap-2 flex-wrap"
+              className="text-xs tracking-wide text-[rgba(245,241,232,0.6)] mb-8 flex items-center gap-2 flex-wrap"
             >
               <Link href="/" className="hover:text-[var(--sp-pewter)]">Accueil</Link>
               {crumbs.map((c, i) => (
@@ -89,7 +89,7 @@ export function PageHero({ eyebrow, title, subtitle, crumbs, bgImage }: PageHero
 
         {subtitle && (
           <FadeIn delay={500} className="mt-8 max-w-2xl">
-            <p className="text-lg text-[rgba(238,236,233,0.85)] leading-relaxed">
+            <p className="text-lg text-[rgba(245,241,232,0.85)] leading-relaxed">
               {subtitle}
             </p>
           </FadeIn>

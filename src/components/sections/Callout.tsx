@@ -43,7 +43,7 @@ export function Callout({ eyebrow, title, body, cta, variant = "soft" }: Callout
               {body && (
                 <p
                   className="mb-10 text-lg leading-relaxed"
-                  style={{ color: isDark ? "rgba(238,236,233,0.85)" : undefined }}
+                  style={{ color: isDark ? "rgba(245,241,232,0.85)" : undefined }}
                 >
                   {body}
                 </p>

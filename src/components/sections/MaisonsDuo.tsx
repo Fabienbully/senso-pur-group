@@ -37,7 +37,7 @@ export function MaisonsDuo() {
                   className="absolute inset-0 transition-opacity duration-700"
                   style={{
                     background:
-                      "linear-gradient(180deg, rgba(27,40,36,0) 35%, rgba(27,40,36,0.85) 100%)",
+                      "linear-gradient(180deg, rgba(10,22,40,0) 35%, rgba(10,22,40,0.85) 100%)",
                   }}
                 />
                 <div className="absolute inset-x-0 bottom-0 p-8 md:p-10 text-[var(--sp-alabaster)]">
@@ -47,7 +47,7 @@ export function MaisonsDuo() {
                   <h3 className="font-heading text-[clamp(1.8rem,3.4vw,2.8rem)] text-[var(--sp-alabaster)] mb-3">
                     {m.name}
                   </h3>
-                  <p className="text-sm text-[rgba(238,236,233,0.85)] max-w-md">
+                  <p className="text-sm text-[rgba(245,241,232,0.85)] max-w-md">
                     {m.teaser}
                   </p>
                   <div

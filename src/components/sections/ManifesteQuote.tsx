@@ -34,7 +34,7 @@ export function ManifesteQuote({ quote, author, role }: ManifesteQuoteProps) {
           {(author || role) && (
             <p className="mt-10 text-sm tracking-wide uppercase text-[var(--sp-pewter)]">
               {author}
-              {role && <span className="text-[rgba(238,236,233,0.55)]"> · {role}</span>}
+              {role && <span className="text-[rgba(245,241,232,0.55)]"> · {role}</span>}
             </p>
           )}
         </FadeIn>

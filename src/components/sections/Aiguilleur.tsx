@@ -18,7 +18,7 @@ export function Aiguilleur() {
           >
             Trouvez votre chemin
           </h2>
-          <p className="mt-6 text-base text-[rgba(238,236,233,0.78)] max-w-2xl mx-auto">
+          <p className="mt-6 text-base text-[rgba(245,241,232,0.78)] max-w-2xl mx-auto">
             Selon ce que vous cherchez, le bon point d'entrée n'est pas le même.
           </p>
         </FadeIn>
@@ -28,7 +28,7 @@ export function Aiguilleur() {
             <FadeIn key={card.tag} delay={i * 120}>
               <Link
                 href={card.href}
-                className="group block h-full p-9 rounded-[var(--sp-radius-lg)] border border-[rgba(238,236,233,0.12)] bg-[rgba(238,236,233,0.03)] hover:bg-[rgba(238,236,233,0.07)] hover:border-[rgba(153,179,183,0.5)] transition-all duration-500"
+                className="group block h-full p-9 rounded-[var(--sp-radius-lg)] border border-[rgba(245,241,232,0.12)] bg-[rgba(245,241,232,0.03)] hover:bg-[rgba(245,241,232,0.07)] hover:border-[rgba(232,169,138,0.5)] transition-all duration-500"
 
 
               >
@@ -41,7 +41,7 @@ export function Aiguilleur() {
                 >
                   {card.title}
                 </h3>
-                <p className="text-sm text-[rgba(238,236,233,0.72)] mb-8 leading-relaxed">
+                <p className="text-sm text-[rgba(245,241,232,0.72)] mb-8 leading-relaxed">
                   {card.body}
                 </p>
                 <span className="inline-flex items-center gap-2 text-sm text-[var(--sp-pewter)] font-medium">
@@ -63,7 +63,7 @@ export function Aiguilleur() {
               href={s.href}
               target={s.external ? "_blank" : undefined}
               rel={s.external ? "noopener noreferrer" : undefined}
-              className="flex items-start gap-3 text-sm text-[rgba(238,236,233,0.72)] hover:text-[var(--sp-alabaster)] transition-colors py-4 border-t border-[rgba(238,236,233,0.12)]"
+              className="flex items-start gap-3 text-sm text-[rgba(245,241,232,0.72)] hover:text-[var(--sp-alabaster)] transition-colors py-4 border-t border-[rgba(245,241,232,0.12)]"
             >
               <span aria-hidden className="text-[var(--sp-pewter)] mt-0.5">→</span>
               <span>

@@ -43,7 +43,7 @@ export default function NosMaisons() {
                     className="absolute inset-0"
                     style={{
                       background:
-                        "linear-gradient(180deg, rgba(27,40,36,0) 30%, rgba(27,40,36,0.85) 100%)",
+                        "linear-gradient(180deg, rgba(10,22,40,0) 30%, rgba(10,22,40,0.85) 100%)",
                     }}
                   />
                   <div className="absolute inset-x-0 bottom-0 p-10 text-[var(--sp-alabaster)]">
@@ -57,7 +57,7 @@ export default function NosMaisons() {
                     >
                       {m.name}
                     </h2>
-                    <p className="text-sm text-[rgba(238,236,233,0.85)] max-w-md">{m.teaser}</p>
+                    <p className="text-sm text-[rgba(245,241,232,0.85)] max-w-md">{m.teaser}</p>
                   </div>
                 </Link>
               </FadeIn>

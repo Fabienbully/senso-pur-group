@@ -3,15 +3,25 @@
 @import "../styles/animations.css";
 
 @theme {
-  --color-sp-alabaster: #EEECE9;
-  --color-sp-alabaster-warm: #E3D8C7;
-  --color-sp-pewter: #99B3B7;
-  --color-sp-bronze: #9D7960;
-  --color-sp-bronze-soft: #C4AE97;
-  --color-sp-mahogany: #6E3D23;
-  --color-sp-slate: #304E4D;
-  --color-sp-obsidian: #1B2824;
-  --color-sp-midnight: #22324A;
+  /* Charte officielle Senso Pur Group 2026
+     40 % bleu nuit · 40 % crème ivoire · 10 % pêche · 10 % pêche poudrée */
+  --color-sp-midnight:        #0A1628;
+  --color-sp-midnight-deep:   #1A2332;
+  --color-sp-ivory:           #F5F1E8;
+  --color-sp-ivory-warm:      #FCF8F1;
+  --color-sp-peach:           #E8A98A;
+  --color-sp-peach-soft:      #F4C9A8;
+  --color-sp-gold:            #C9A961;
+
+  /* Aliases legacy (compat. classes Tailwind présentes dans les composants) */
+  --color-sp-alabaster:       #F5F1E8;  /* → ivory */
+  --color-sp-alabaster-warm:  #FCF8F1;  /* → ivory-warm */
+  --color-sp-pewter:          #E8A98A;  /* → peach */
+  --color-sp-bronze:          #E8A98A;  /* → peach */
+  --color-sp-bronze-soft:     #F4C9A8;  /* → peach-soft */
+  --color-sp-mahogany:        #0A1628;  /* → midnight (titres forts) */
+  --color-sp-slate:           #1A2332;  /* → midnight-deep (texte) */
+  --color-sp-obsidian:        #0A1628;  /* → midnight (footer/hero) */
 
   --font-heading: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Manrope', -apple-system, sans-serif;
@@ -128,13 +138,13 @@ p { margin: 0 0 1em; }
 }
 .sp-btn--secondary {
   color: var(--sp-alabaster);
-  background: rgba(238, 236, 233, 0.06);
-  border-color: rgba(238, 236, 233, 0.55);
+  background: rgba(245,241,232, 0.06);
+  border-color: rgba(245,241,232, 0.55);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 .sp-btn--secondary:hover {
-  background: rgba(238, 236, 233, 0.12);
+  background: rgba(245,241,232, 0.12);
   transform: translateY(-2px);
 }
 .sp-btn--ghost {

@@ -40,7 +40,7 @@ export function HeroVideo() {
         className="absolute inset-0 -z-10 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at center, rgba(27,40,36,0.45) 0%, rgba(27,40,36,0.78) 70%, rgba(27,40,36,0.92) 100%)",
+            "radial-gradient(ellipse at center, rgba(10,22,40,0.45) 0%, rgba(10,22,40,0.78) 70%, rgba(10,22,40,0.92) 100%)",
           boxShadow: "inset 0 0 220px 60px rgba(0,0,0,0.55)",
         }}
       />
@@ -102,7 +102,7 @@ export function HeroVideo() {
         {/* Scroll cue */}
         <div
           aria-hidden
-          className="absolute left-1/2 -translate-x-1/2 bottom-10 flex flex-col items-center gap-3 text-[rgba(238,236,233,0.6)] text-[0.65rem] tracking-[0.3em] uppercase"
+          className="absolute left-1/2 -translate-x-1/2 bottom-10 flex flex-col items-center gap-3 text-[rgba(245,241,232,0.6)] text-[0.65rem] tracking-[0.3em] uppercase"
         >
           <span>Faites défiler</span>
           <span

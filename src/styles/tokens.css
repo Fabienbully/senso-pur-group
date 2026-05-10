@@ -1,42 +1,59 @@
 /* =========================================================================
-   Senso Pur — Charte officielle 2026
-   À ne pas modifier sans validation Direction (Fabien Bully).
+   Senso Pur Group — Charte officielle 2026
+   Source : "Senso Pur group _ Mini Charte Graphique" — mai 2026
+   Répartition cible : 40 % bleu nuit · 40 % crème ivoire · 10 % pêche · 10 % pêche poudrée
    ========================================================================= */
 
 :root {
-  /* === Palette signature ============================================= */
-  --sp-alabaster:      #EEECE9;  /* Fonds principaux, aplats clairs   */
-  --sp-pewter:         #99B3B7;  /* Accents, liens — couleur signature */
-  --sp-bronze:         #9D7960;  /* Tons chauds intermédiaires        */
-  --sp-mahogany:       #6E3D23;  /* Titres forts, boutons             */
-  --sp-slate:          #304E4D;  /* Textes courants                   */
-  --sp-obsidian:       #1B2824;  /* Footer, hero overlays             */
-  --sp-midnight:       #22324A;  /* Bleu nuit du logo                 */
+  /* === Palette signature 2026 ======================================== */
+  --sp-midnight:        #0A1628;  /* Bleu nuit signature — 40 %         */
+  --sp-midnight-deep:   #1A2332;  /* Bleu nuit pour textes courants     */
+  --sp-ivory:           #F5F1E8;  /* Crème ivoire — 40 %                */
+  --sp-ivory-warm:      #FCF8F1;  /* Crème très clair (cards)           */
+  --sp-peach:           #E8A98A;  /* Pêche — 10 % accent vif            */
+  --sp-peach-soft:      #F4C9A8;  /* Pêche poudrée — 10 % accent doux   */
+  --sp-gold:            #C9A961;  /* Or sable — accent rare             */
+  --sp-blue-powder:     #A8B4C7;  /* Bleu poudré — variante rare        */
 
-  /* === Tons interpolés =============================================== */
-  --sp-alabaster-warm: #E3D8C7;
-  --sp-bronze-soft:    #C4AE97;
+  /* === Aliases legacy (compat. composants existants) =================
+     Le code des sections utilise encore --sp-alabaster, --sp-mahogany, etc.
+     On les redirige vers la nouvelle palette pour faire évoluer toute
+     l'identité sans toucher chaque composant. */
+  --sp-alabaster:       var(--sp-ivory);          /* Fonds principaux  */
+  --sp-alabaster-warm:  var(--sp-ivory-warm);     /* Fonds doux        */
+  --sp-obsidian:        var(--sp-midnight);       /* Footer, hero      */
+  --sp-slate:           var(--sp-midnight-deep);  /* Texte courant     */
+  --sp-mahogany:        var(--sp-midnight);       /* Titres forts      */
+  --sp-bronze:          var(--sp-peach);          /* Accents vifs      */
+  --sp-bronze-soft:     var(--sp-peach-soft);     /* Bordures douces   */
+  --sp-pewter:          var(--sp-peach);          /* Accent signature  */
 
   /* === Aliases sémantiques =========================================== */
-  --sp-bg:             var(--sp-alabaster);
-  --sp-bg-soft:        var(--sp-alabaster-warm);
-  --sp-text:           var(--sp-slate);
-  --sp-text-strong:    var(--sp-mahogany);
-  --sp-text-on-dark:   var(--sp-alabaster);
-  --sp-accent:         var(--sp-pewter);
-  --sp-border:         var(--sp-bronze-soft);
+  --sp-bg:              var(--sp-ivory);
+  --sp-bg-soft:         var(--sp-ivory-warm);
+  --sp-text:            var(--sp-midnight-deep);
+  --sp-text-strong:     var(--sp-midnight);
+  --sp-text-on-dark:    var(--sp-ivory);
+  --sp-accent:          var(--sp-peach);
+  --sp-border:          var(--sp-peach-soft);
+
+  /* === RGB triplets (utilisables via rgba(var(--sp-x-rgb), 0.5)) ===== */
+  --sp-midnight-rgb:    10, 22, 40;
+  --sp-ivory-rgb:       245, 241, 232;
+  --sp-peach-rgb:       232, 169, 138;
+  --sp-peach-soft-rgb:  244, 201, 168;
 
   /* === Typographies ================================================== */
-  --sp-font-heading:   'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --sp-font-body:      'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --sp-font-heading:    'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sp-font-body:       'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
-  /* === Espacements (rule of breathing) ================================ */
-  --sp-space-xs:   0.5rem;
-  --sp-space-sm:   1rem;
-  --sp-space-md:   2rem;
-  --sp-space-lg:   4rem;
-  --sp-space-xl:   6rem;
-  --sp-space-2xl:  8rem;
+  /* === Espacements =================================================== */
+  --sp-space-xs:    0.5rem;
+  --sp-space-sm:    1rem;
+  --sp-space-md:    2rem;
+  --sp-space-lg:    4rem;
+  --sp-space-xl:    6rem;
+  --sp-space-2xl:   8rem;
 
   /* === Easings cinéma ================================================ */
   --sp-ease-out:    cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -56,14 +73,14 @@
   --sp-radius-lg:    20px;
   --sp-radius-pill:  999px;
 
-  /* === Ombres ======================================================== */
-  --sp-shadow-soft:    0 6px 18px -8px rgba(27,40,36,0.14), 0 2px 6px -2px rgba(27,40,36,0.07);
-  --sp-shadow-medium:  0 16px 40px -16px rgba(27,40,36,0.24), 0 6px 14px -6px rgba(27,40,36,0.12);
-  --sp-shadow-strong:  0 32px 70px -28px rgba(27,40,36,0.34), 0 12px 24px -8px rgba(27,40,36,0.16);
-  --sp-shadow-glow:    0 0 0 1px rgba(153,179,183,0.55), 0 12px 32px -10px rgba(153,179,183,0.50);
+  /* === Ombres recalibrées sur le bleu nuit ============================ */
+  --sp-shadow-soft:    0 6px 18px -8px rgba(10,22,40,0.18), 0 2px 6px -2px rgba(10,22,40,0.09);
+  --sp-shadow-medium:  0 16px 40px -16px rgba(10,22,40,0.28), 0 6px 14px -6px rgba(10,22,40,0.14);
+  --sp-shadow-strong:  0 32px 70px -28px rgba(10,22,40,0.38), 0 12px 24px -8px rgba(10,22,40,0.18);
+  --sp-shadow-glow:    0 0 0 1px rgba(232,169,138,0.55), 0 12px 32px -10px rgba(232,169,138,0.50);
 
   /* === Layout ======================================================== */
-  --sp-container:    min(1280px, 92vw);
+  --sp-container:      min(1280px, 92vw);
   --sp-container-wide: min(1440px, 96vw);
-  --sp-header-h:     88px;
+  --sp-header-h:       88px;
 }

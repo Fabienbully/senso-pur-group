@@ -61,7 +61,7 @@ export function Footer() {
                   <li key={l.label}>
                     <Link
                       href={l.href}
-                      className="text-sm text-[rgba(238,236,233,0.78)] hover:text-[var(--sp-alabaster)] transition-colors leading-relaxed"
+                      className="text-sm text-[rgba(245,241,232,0.78)] hover:text-[var(--sp-alabaster)] transition-colors leading-relaxed"
                     >
                       {l.label}
                     </Link>
@@ -72,8 +72,8 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 pt-10 border-t border-[rgba(238,236,233,0.12)]">
-          <p className="text-xs text-[rgba(238,236,233,0.55)] max-w-md leading-relaxed">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 pt-10 border-t border-[rgba(245,241,232,0.12)]">
+          <p className="text-xs text-[rgba(245,241,232,0.55)] max-w-md leading-relaxed">
             SENSO PUR SAS — Capital social. SIREN. RCS Vienne. Fabricant français
             de literie depuis 2010.<br />
             <Link href="/mentions-legales" className="underline-offset-2 hover:underline">
@@ -84,7 +84,7 @@ export function Footer() {
               Politique de confidentialité
             </Link>
           </p>
-          <p className="text-xs text-[rgba(238,236,233,0.55)]">
+          <p className="text-xs text-[rgba(245,241,232,0.55)]">
             © {new Date().getFullYear()} Senso Pur Group. Tous droits réservés.
           </p>
         </div>
@@ -92,7 +92,7 @@ export function Footer() {
 
       <p
         aria-hidden
-        className="font-heading italic select-none pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[rgba(238,236,233,0.06)] tracking-tight"
+        className="font-heading italic select-none pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[rgba(245,241,232,0.06)] tracking-tight"
         style={{ fontSize: "clamp(6rem, 18vw, 18rem)", lineHeight: 1 }}
       >
         Diffuseur de confort

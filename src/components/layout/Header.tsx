@@ -50,7 +50,7 @@ export function Header() {
       className={cn(
         "fixed top-0 inset-x-0 z-50 transition-[background,backdrop-filter,box-shadow] duration-500",
         scrolled || open
-          ? "bg-[rgba(238,236,233,0.92)] backdrop-blur-md shadow-[0_1px_0_rgba(27,40,36,0.06)]"
+          ? "bg-[rgba(245,241,232,0.92)] backdrop-blur-md shadow-[0_1px_0_rgba(10,22,40,0.06)]"
           : "bg-transparent"
       )}
       data-scrolled={scrolled || open}

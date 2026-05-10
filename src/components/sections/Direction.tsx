@@ -24,7 +24,7 @@ export function Direction() {
                 className="absolute inset-0 pointer-events-none"
                 style={{
                   background:
-                    "linear-gradient(180deg, transparent 50%, rgba(27,40,36,0.5) 100%)",
+                    "linear-gradient(180deg, transparent 50%, rgba(10,22,40,0.5) 100%)",
                 }}
               />
             </div>

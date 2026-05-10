@@ -67,7 +67,7 @@ export function VideoFeature({ src, poster, youtubeId, caption, aspect = "16/9" 
             ) : null}
 
             {caption && (
-              <figcaption className="absolute bottom-6 left-6 px-4 py-2 rounded-full bg-[rgba(27,40,36,0.55)] backdrop-blur-md text-xs tracking-wide text-[var(--sp-alabaster)]">
+              <figcaption className="absolute bottom-6 left-6 px-4 py-2 rounded-full bg-[rgba(10,22,40,0.55)] backdrop-blur-md text-xs tracking-wide text-[var(--sp-alabaster)]">
                 {caption}
               </figcaption>
             )}

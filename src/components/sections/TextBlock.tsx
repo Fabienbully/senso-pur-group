@@ -54,7 +54,7 @@ export function TextBlock({
           )}
           <div
             className={`text-lg leading-relaxed space-y-5 ${
-              isDark ? "text-[rgba(238,236,233,0.85)]" : "text-[var(--sp-slate)]"
+              isDark ? "text-[rgba(245,241,232,0.85)]" : "text-[var(--sp-slate)]"
             }`}
           >
             {typeof body === "string"
