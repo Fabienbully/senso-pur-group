@@ -61,6 +61,7 @@ Au fil des années, ce savoir-faire s'est élargi. Des matelas hôteliers de Bel
             body: "Le do-it-yourself sur mousse et tissus pour les particuliers. C'est aussi l'expression la plus aboutie de notre démarche circulaire : nous remoussons les canapés de nos clients pour leur donner une seconde vie.",
             href: "https://www.matelas-pour-tous.com/fr",
             external: true,
+            watermark: "/images/brand/matelas-pour-tous-sigle.png",
           },
           {
             eyebrow: "COLLECTION · PERFORMANCE SPORTIVE",
