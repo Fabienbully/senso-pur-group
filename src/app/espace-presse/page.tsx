@@ -11,43 +11,44 @@ import { FadeIn } from "@/components/animations/FadeIn";
 export const metadata: Metadata = {
   title: "Espace presse",
   description:
-    "Senso Pur — pitch, retombées presse, kit média, contacts journalistes. Industriel français du sommeil depuis 2010.",
+    "Senso Pur, vu par la presse — pitch, retombées, kit média, contacts journalistes. Industrie française, RSE, entrepreneuriat familial.",
 };
 
 const RETOMBEES = [
-  { title: "Les Échos · 2025", body: "Sur la doctrine d'achat publique de Senso Pur — un précédent pour l'industrie textile française." },
-  { title: "Maison & Travaux · 2025", body: "Reportage usine de Vaulx-Milieu — l'industrie qu'on peut visiter." },
-  { title: "Stratégies · 2024",   body: "Maison Aubertin — comment Marine Bully repositionne la marque sur l'art de vivre." },
-  { title: "L'Hôtellerie Restauration · 2024", body: "Bellecour Literie — la marque hôtelière de Senso Pur passe en offre Contract." },
-  { title: "Le Dauphiné · 2023",  body: "Senso Pur, l'industriel familial qui irrigue l'écosystème textile de l'Isère." },
-  { title: "BFM Business · 2022", body: "Interview Fabien Bully — Entrepreneur de l'année 2019 trois ans après." },
+  { title: "Le Progrès — Senso Pur", body: "Reportage régional sur le groupe et son ancrage en Isère. (16 novembre 2021)" },
+  { title: "Le Monde du Camping-Car — Matelas Pour Tous", body: "Focus sur la marque Matelas Pour Tous et le sur-mesure pour les véhicules de loisirs. (Juillet 2024)" },
+  { title: "Le Courrier du Meuble", body: "Présentation du groupe dans la presse spécialisée ameublement. (Octobre 2024)" },
+  { title: "Ma Santé — Publi-reportage", body: "Publi-reportage autour de la qualité du sommeil et du savoir-faire literie Senso Pur. (Décembre 2025)" },
+  { title: "Le Messager Savoyard", body: "Publireportage régional autour de Senso Pur. (Juin 2025)" },
+  { title: "Bref Eco — Portrait Fabien Bully", body: "Portrait du dirigeant et présentation de la stratégie de croissance. (13 septembre 2022)" },
+  { title: "Bref Eco — Levée de fonds Senso Pur", body: "Annonce de la première levée de fonds du groupe, avec un objectif de doublement du chiffre d'affaires en cinq ans. (Août 2022)" },
+  { title: "Le Journal des Entreprises — Déménagement en Isère", body: "Article sur le déménagement vers la nouvelle usine de Vaulx-Milieu et le modèle du groupe. (5 novembre 2019)" },
+  { title: "Bref Eco — Déménagement Senso Pur", body: "Annonce du déménagement vers Vaulx-Milieu, accompagné de cinq embauches. (2019)" },
 ];
 
 const DISTINCTIONS = [
-  { title: "Entrepreneur de l'année 2019", body: "Région Auvergne-Rhône-Alpes — Fabien Bully." },
-  { title: "EcoVadis Médaille Argent",     body: "Top 25% des entreprises évaluées sur la performance RSE." },
-  { title: "La French Fab — membre actif", body: "Représentation de l'industrie française du sommeil." },
-  { title: "The Positive Company",         body: "Communauté d'entreprises engagées." },
+  { title: "Prix de l'entrepreneur de l'année 2019", body: "Fabien Bully a été nommé pour le Prix de l'entrepreneur de l'année 2019, distinction qui salue les dirigeants français portant un projet à fort potentiel de croissance et d'innovation." },
+  { title: "Membre de La French Fab", body: "Senso Pur est référencée comme PME industrielle française au sein de La French Fab, mouvement porté par Bpifrance qui rassemble 4 000+ entreprises industrielles." },
+  { title: "Médaille EcoVadis Argent", body: "Médaille Argent EcoVadis, qui place Senso Pur dans le top 25 % des entreprises évaluées sur quatre piliers : environnement, social et droits humains, éthique, achats responsables." },
+  { title: "The Positive Company (66/100)", body: "Score de 66/100 au label The Positive Company, qui évalue l'impact global d'une entreprise sur ses parties prenantes." },
+  { title: "Indice Maturité Climat Bpifrance B+", body: "Note B+ à l'Indice Maturité Climat Bpifrance, soit au-dessus de la moyenne du secteur (C+)." },
 ];
 
 export default function EspacePresse() {
   return (
     <>
       <PageHero
-        crumbs={[{ label: "Espace presse" }]}
+        crumbs={[{ label: "Presse" }]}
         eyebrow="ESPACE PRESSE"
-        title="Senso Pur, l'industriel français du sommeil — depuis 2010."
-        subtitle="Pitch, retombées, kit média, contacts. Un seul interlocuteur dédié, une réponse sous 24h."
+        title="Senso Pur, vu par la presse — et ce qu'il faut savoir pour en parler."
+        subtitle="Vous écrivez sur l'industrie française, la RSE, l'entrepreneuriat familial, ou la literie. Voici les retombées presse récentes, les chiffres-clés du groupe, le kit média téléchargeable, et les contacts directs."
       />
 
       <TextBlock
-        eyebrow="PITCH"
-        title="Une famille, deux maisons, un savoir-faire"
-        body={`Senso Pur a été fondé en 2010 par Fabien Bully avec son père. La maison fabrique 50 000 matelas par an dans son usine de Vaulx-Milieu (Isère, 6 600 m², 35 collaborateurs). Marine Bully, sa sœur, l'a rejoint en 2014 puis a créé Maison Aubertin en 2017 — une seconde maison qui prolonge la literie vers l'art de vivre.
-
-Le groupe distribue ses produits en D2C (sites de marques), B2B2C (marketplaces : La Redoute, Veepee, Maisons du Monde, BUT, Amazon) et B2B (hôtellerie : Villa Maïa, Le Claridge, Fraser Suites, Belambra, Huttopia, VVF). Six certifications RSE attestent de la démarche : OEKO-TEX, CertiPUR, EcoVadis Argent, The Positive Company, French Fab, PEFC.
-
-Mai 2026 : publication de la doctrine d'achat — pays par pays, partenaire par partenaire — un précédent dans le secteur du sommeil.`}
+        eyebrow="LE GROUPE EN 30 SECONDES"
+        title="Senso Pur en cinq lignes"
+        body="Senso Pur est un fabricant français de literie et d'art de vivre, fondé en 2010 par la famille Bully. Le groupe est implanté à Vaulx-Milieu (Isère), où il fabrique l'essentiel de ses produits. Il regroupe deux maisons (La Maison Senso et Maison Aubertin) et plusieurs marques (Bellecour Literie, Matelas Pour Tous, Olympe). Présidé par Fabien Bully, en codirection avec Marine Bully."
+        bg="soft"
       />
 
       <ChiffresCles />
@@ -55,14 +56,17 @@ Mai 2026 : publication de la doctrine d'achat — pays par pays, partenaire par 
       <section className="sp-section bg-[var(--sp-bg)]">
         <div className="sp-container">
           <FadeIn className="mb-12">
-            <p className="sp-eyebrow mb-3">RETOMBÉES PRESSE</p>
-            <h2>Ils ont parlé de nous</h2>
+            <p className="sp-eyebrow mb-3">ILS EN PARLENT</p>
+            <h2>Senso Pur dans la presse</h2>
+            <p className="text-[var(--sp-slate)] mt-4 max-w-2xl">
+              Une sélection d&apos;articles parus sur le groupe, ses dirigeants et son projet.
+            </p>
           </FadeIn>
           <ul className="grid md:grid-cols-2 gap-x-12 gap-y-8">
             {RETOMBEES.map((r, i) => (
-              <FadeIn key={r.title} delay={i * 70} as="li">
+              <FadeIn key={r.title} delay={i * 60} as="li">
                 <article className="border-t border-[var(--sp-bronze-soft)]/40 pt-5">
-                  <h3 className="text-[var(--sp-mahogany)] mb-2" style={{ fontSize: "1.2rem" }}>
+                  <h3 className="text-[var(--sp-mahogany)] mb-2" style={{ fontSize: "1.15rem" }}>
                     {r.title}
                   </h3>
                   <p className="text-[var(--sp-slate)] leading-relaxed text-sm">{r.body}</p>
@@ -75,42 +79,43 @@ Mai 2026 : publication de la doctrine d'achat — pays par pays, partenaire par 
 
       <FeaturesList
         eyebrow="DISTINCTIONS"
-        title="Reconnaissances institutionnelles"
+        title="Nos distinctions et reconnaissances"
         features={DISTINCTIONS}
+        layout="2col"
         bg="soft"
       />
 
       <Callout
-        eyebrow="KIT MÉDIA"
-        title="Un kit complet à votre disposition"
-        body="Logos haute définition, photos d'usine, portraits Fabien & Marine, fiche identité du groupe, vidéo manifeste 90 sec. Disponible sur demande à press@senso-pur.com."
+        eyebrow="DOSSIER DE PRESSE"
+        title="À télécharger"
+        body="Document officiel pour vos articles, dossiers et publications. Pour des visuels HD ou des chiffres complémentaires, écrivez à press@senso-pur.com."
         cta={{ label: "Demander le kit média", href: "mailto:press@senso-pur.com" }}
         variant="obsidian"
       />
 
       <ContactAiguilleur
-        eyebrow="VOTRE DEMANDE"
-        title="Contacts presse"
+        eyebrow="CONTACT PRESSE"
+        title="Une question, un sujet, une demande d'interview ?"
         cards={[
           {
-            tag: "INTERVIEW · USINE",
-            title: "Fabien Bully · CEO",
-            body: "Pour les sujets industrie, stratégie, sourcing, RSE.",
-            cta: "press@senso-pur.com",
+            tag: "EMAIL DÉDIÉ",
+            title: "press@senso-pur.com",
+            body: "Réponse sous 48 h ouvrées garantie. Interview Fabien et/ou Marine Bully, visite de l'usine (sur RDV), demande de chiffres ou visuels HD.",
+            cta: "Écrire à la presse",
             href: "mailto:press@senso-pur.com",
           },
           {
-            tag: "INTERVIEW · ART DE VIVRE",
-            title: "Marine Bully · Direction Aubertin",
-            body: "Pour les sujets décoration, art de vivre, offre Contract.",
-            cta: "press@senso-pur.com",
-            href: "mailto:press@senso-pur.com",
+            tag: "TÉLÉPHONE",
+            title: "04 74 07 33 51",
+            body: "Standard de l'usine. Pour les sollicitations urgentes en heures ouvrées.",
+            cta: "Appeler",
+            href: "tel:+33474073351",
           },
           {
-            tag: "VISITE D'USINE",
-            title: "Sur rendez-vous",
-            body: "L'usine de Vaulx-Milieu se visite. Sur rendez-vous, encadré.",
-            cta: "Demander une visite",
+            tag: "L'ÉQUIPE",
+            title: "L'équipe communication",
+            body: "Une question, un sujet, une demande d'interview ? Notre équipe communication centralise les demandes et oriente vers le bon interlocuteur.",
+            cta: "press@senso-pur.com",
             href: "mailto:press@senso-pur.com",
           },
         ]}
@@ -120,9 +125,24 @@ Mai 2026 : publication de la doctrine d'achat — pays par pays, partenaire par 
         eyebrow="POUR ALLER PLUS LOIN"
         title="Le contexte complet"
         cards={[
-          { eyebrow: "GROUPE", title: "Notre direction", body: "Bios Fabien & Marine.", href: "/notre-direction" },
-          { eyebrow: "USINE", title: "Notre fabrication", body: "L'usine de Vaulx-Milieu.", href: "/notre-fabrication" },
-          { eyebrow: "DOCTRINE", title: "Doctrine d'achat", body: "Notre cartographie sourcing.", href: "/doctrine-achat" },
+          {
+            eyebrow: "LES DIRIGEANTS",
+            title: "Fabien et Marine Bully",
+            body: "Les biographies complètes des dirigeants, avec photos et citations.",
+            href: "/notre-direction",
+          },
+          {
+            eyebrow: "LE FOND",
+            title: "Nos engagements RSE",
+            body: "Tous les chiffres, labels et engagements vérifiables du groupe.",
+            href: "/engagements-rse",
+          },
+          {
+            eyebrow: "L'EXCLUSIVITÉ",
+            title: "Notre doctrine d'achat",
+            body: "La transparence radicale sur notre sourcing — un sujet pour un papier.",
+            href: "/doctrine-achat",
+          },
         ]}
       />
     </>

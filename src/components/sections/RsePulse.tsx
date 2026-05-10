@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CERTIFICATIONS } from "@/content/home";
+import { CERTIFICATIONS, RSE_PULSE } from "@/content/home";
 import { FadeIn } from "@/components/animations/FadeIn";
 
 export function RsePulse() {
@@ -30,12 +30,13 @@ export function RsePulse() {
                 <div className="text-center">
                   <div
                     className="font-heading text-[var(--sp-mahogany)] leading-none"
-                    style={{ fontSize: "clamp(5rem, 12vw, 9rem)", fontWeight: 500 }}
+                    style={{ fontSize: "clamp(4rem, 10vw, 8.5rem)", fontWeight: 500 }}
                   >
-                    100<span className="text-[0.5em] align-top">%</span>
+                    {RSE_PULSE.bigNumber.replace("%", "")}
+                    <span className="text-[0.5em] align-top">%</span>
                   </div>
-                  <p className="sp-eyebrow text-[var(--sp-pewter)] mt-3">
-                    MOUSSES CERTIFIÉES
+                  <p className="sp-eyebrow text-[var(--sp-peach)] mt-3">
+                    {RSE_PULSE.bigSubtext}
                   </p>
                 </div>
               </div>
@@ -53,15 +54,12 @@ export function RsePulse() {
           </FadeIn>
 
           <FadeIn delay={120} className="order-1 lg:order-2">
-            <p className="sp-eyebrow mb-4">NOS ENGAGEMENTS</p>
+            <p className="sp-eyebrow mb-4">{RSE_PULSE.eyebrow}</p>
             <h2 id="rse-title" className="mb-6">
-              Nos mousses sont certifiées. Nos chutes ne sont pas perdues —
-              transformées en coussins, en isolants thermiques.
+              {RSE_PULSE.title}
             </h2>
             <p className="text-[var(--sp-slate)] leading-relaxed mb-8">
-              Six référentiels exigeants attestent de la qualité matières, de
-              l'éthique sociale et environnementale, et du sourcing France de
-              notre fabrication.
+              {RSE_PULSE.support}
             </p>
 
             <div className="grid grid-cols-3 gap-6 mb-10">
@@ -78,13 +76,8 @@ export function RsePulse() {
               ))}
             </div>
 
-            <Link
-              href="/engagements-rse"
-              className="sp-btn sp-btn--ghost"
-
-
-            >
-              Lire nos engagements →
+            <Link href={RSE_PULSE.link} className="sp-btn sp-btn--ghost">
+              {RSE_PULSE.linkText} →
             </Link>
           </FadeIn>
         </div>

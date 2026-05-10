@@ -1,13 +1,14 @@
-import { TROIS_MARCHES } from "@/content/home";
+import { TROIS_MARCHES, TROIS_MARCHES_HEAD } from "@/content/home";
 import { FadeIn } from "@/components/animations/FadeIn";
 
 export function TripleV3() {
   return (
     <section className="sp-section bg-[var(--sp-bg)]" aria-labelledby="triple-title">
       <div className="sp-container">
-        <FadeIn className="text-center mb-16 max-w-3xl mx-auto">
-          <p className="sp-eyebrow mb-4">TROIS MARCHÉS</p>
-          <h2 id="triple-title">Trois marchés, un seul savoir-faire</h2>
+        <FadeIn className="text-center mb-14 md:mb-16 max-w-3xl mx-auto">
+          <p className="sp-eyebrow mb-4">{TROIS_MARCHES_HEAD.eyebrow}</p>
+          <h2 id="triple-title" className="mb-4">{TROIS_MARCHES_HEAD.title}</h2>
+          <p className="text-[var(--sp-slate)] leading-relaxed">{TROIS_MARCHES_HEAD.subtitle}</p>
         </FadeIn>
 
         <div className="grid md:grid-cols-3 gap-6">

@@ -7,52 +7,53 @@ import { Formulaire } from "@/components/sections/Formulaire";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Senso Pur — 40 rue Antoine Condorcet, 38090 Vaulx-Milieu. Tél. 04 74 07 33 51. Aiguilleur de contact selon votre profil : presse, hôtelier, candidat, partenaire.",
+    "Selon ce que vous cherchez, le bon interlocuteur n'est pas le même. Senso Pur — Parc technologique de l'Isle, 40 rue Antoine Condorcet, 38090 Vaulx-Milieu.",
 };
 
 const CARDS = [
   {
-    tag: "HÔTELIER · PROJET PRO",
-    title: "Bellecour Literie",
-    body: "Notre marque hôtellerie. Sur-mesure, livraison, installation, SAV.",
-    cta: "bellecour-literie.com",
-    href: "https://bellecour-literie.com",
+    tag: "VOUS ÊTES PROFESSIONNEL",
+    title: "Hôtelier, résidence, ensemblier",
+    body: "Pour la literie, contactez Bellecour. Pour une offre Contract complète (literie + décoration + pose), contactez Maison Aubertin.",
+    cta: "Bellecour Literie",
+    href: "https://www.bellecour-literie.com",
     external: true,
   },
   {
-    tag: "PRESSE",
-    title: "Espace presse",
-    body: "Pitch, retombées, kit média et contacts dédiés journalistes.",
-    cta: "Voir l'espace presse",
-    href: "/espace-presse",
+    tag: "VOUS ÊTES PARTICULIER",
+    title: "Acheter pour la maison",
+    body: "Selon votre besoin, nous avons quatre destinations adaptées. Choisissez la marque qui correspond à votre projet.",
+    cta: "La Maison Senso",
+    href: "https://lamaisonsenso.com",
+    external: true,
   },
   {
-    tag: "CANDIDAT",
-    title: "Carrières",
-    body: "Nos métiers, nos avantages, et le formulaire de candidature.",
-    cta: "Postuler",
+    tag: "VOUS ÊTES JOURNALISTE",
+    title: "Demande presse",
+    body: "Pour une interview de Fabien ou Marine Bully, une demande de visite de l'usine, ou un kit média : nous répondons sous 48 h.",
+    cta: "press@senso-pur.com",
+    href: "mailto:press@senso-pur.com",
+  },
+  {
+    tag: "VOUS CHERCHEZ UN POSTE",
+    title: "Candidature spontanée ou postes ouverts",
+    body: "Découvrez nos métiers, nos avantages collaborateurs et nos postes ouverts. Candidatures spontanées bienvenues — nous lisons tout.",
+    cta: "Voir nos postes ouverts",
     href: "/carrieres",
   },
   {
-    tag: "SAV",
-    title: "Service après-vente",
-    body: "Pour toute question sur un produit déjà acheté.",
-    cta: "sav@senso-pur.com",
-    href: "mailto:sav@senso-pur.com",
+    tag: "VOUS ÊTES PARTENAIRE",
+    title: "Partenariat ou demande institutionnelle",
+    body: "Investisseurs, collectivités, fédérations, écoles, associations. Pour toute demande institutionnelle ou de partenariat.",
+    cta: "partenariats@senso-pur.com",
+    href: "mailto:partenariats@senso-pur.com",
   },
   {
-    tag: "PARTICULIER",
-    title: "Sites des marques",
-    body: "Les achats particuliers se font sur les sites des marques du groupe.",
-    cta: "Voir nos maisons",
-    href: "/nos-maisons",
-  },
-  {
-    tag: "AUTRE",
-    title: "Demande générale",
-    body: "Pour toute autre demande, utilisez le formulaire ci-dessous.",
-    cta: "Aller au formulaire",
-    href: "#formulaire",
+    tag: "AUTRE DEMANDE",
+    title: "Toute autre demande",
+    body: "Une question qui ne rentre dans aucune des catégories précédentes ? Écrivez-nous, nous orienterons votre demande.",
+    cta: "contact@senso-pur.com",
+    href: "mailto:contact@senso-pur.com",
   },
 ];
 
@@ -62,11 +63,15 @@ export default function Contact() {
       <PageHero
         crumbs={[{ label: "Contact" }]}
         eyebrow="CONTACT"
-        title="Avant de nous écrire — choisissez le bon point d'entrée."
-        subtitle="Selon votre demande, l'interlocuteur n'est pas le même. Cela nous permet de vous répondre vite, et bien."
+        title="Parlons-nous."
+        subtitle="Selon ce que vous cherchez, le bon interlocuteur n'est pas le même. Pour gagner du temps — le vôtre comme le nôtre — commencez par identifier votre besoin."
       />
 
-      <ContactAiguilleur cards={CARDS} />
+      <ContactAiguilleur
+        eyebrow="VOTRE BESOIN"
+        title="Le bon interlocuteur, du premier coup"
+        cards={CARDS}
+      />
       <Coordonnees />
       <Formulaire />
     </>

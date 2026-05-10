@@ -9,33 +9,57 @@ import { CardsGrid } from "@/components/sections/CardsGrid";
 export const metadata: Metadata = {
   title: "Carrières",
   description:
-    "Senso Pur recrute. Une équipe de 35 personnes, une usine de 6 600 m², 16 ans d'existence. Découvrez nos métiers, nos avantages, et postulez.",
+    "35 personnes à Vaulx-Milieu, en Isère. Une famille à la tête, une usine au cœur, des marques en croissance. Si vous cherchez un travail qui se voit, qui se touche, et qui se mesure — vous êtes au bon endroit.",
 };
 
 const RAISONS = [
-  { title: "Une industrie qui dure", body: "16 ans d'existence, croissance maîtrisée. Une partie de l'équipe est là depuis 2010." },
-  { title: "Un site, une équipe",     body: "Tout le monde, tous les métiers, sur le même site à Vaulx-Milieu. Pas de silo." },
-  { title: "Des métiers concrets",    body: "On voit le résultat de son travail. On peut le toucher. On en est fier." },
-  { title: "La transmission",          body: "Tutorat sur les postes techniques. Formation interne par les anciens." },
+  {
+    title: "Une fabrication intégrée, pas une coquille marketing",
+    body: "Quand vous travaillez chez Senso Pur, vous voyez le résultat de votre travail. Les matelas que vous fabriquez ou accompagnez sortent chaque jour de l'atelier de Vaulx-Milieu. Pas de production sous-traitée à 8 000 km. L'industrie, le vrai, à 30 minutes de Lyon.",
+  },
+  {
+    title: "Une PME familiale qui ne se prend pas pour une multinationale",
+    body: "Senso Pur est dirigée par Fabien et Marine Bully. Frère et sœur. Quand vous arrivez, vous les rencontrez. Quand vous avez un problème, vous savez à qui parler. Quand l'entreprise gagne, vous gagnez aussi — c'est le sens de la prime d'intéressement à laquelle 100 % des collaborateurs participent.",
+  },
+  {
+    title: "Un cap clair, des engagements publics",
+    body: "Bilan carbone réalisé, médaille EcoVadis Argent, partenariat depuis 15 ans avec un centre d'apprentissage par le travail employant des personnes en situation de handicap, ferme photovoltaïque, recyclage intégral des chutes de mousse.",
+  },
+  {
+    title: "Un projet en croissance, des marques en mouvement",
+    body: "La Maison Senso et ses trois marques (Bellecour, Matelas Pour Tous, Olympe), Maison Aubertin et son nouvel univers art de vivre — le groupe a doublé d'effectifs en cinq ans. Un projet qui avance.",
+  },
 ];
 
 const METIERS = [
-  { title: "Découpeur·se numérique", body: "Programme et supervise les machines de découpe haute précision. Formation interne possible si fond mécanique." },
-  { title: "Couturier·ère",           body: "Atelier housses. Travail à la chaîne et sur-mesure pour les commandes hôtelières." },
-  { title: "Tapissier·ère",           body: "Geste de finition — bordures, capitonnage. Métier passion." },
-  { title: "Matelassier·ère",         body: "Spécialiste matelassage. La signature visuelle de la maison." },
-  { title: "Contrôleur·se qualité",  body: "Inspection systématique. Aucun matelas ne sort sans validation." },
-  { title: "Cariste / expéditeur",    body: "Pilotage flux entre stockage et expédition." },
-  { title: "Service après-vente",    body: "L'équipe la plus proche du client. Diagnostic, remplacement." },
+  {
+    title: "Métiers industriels",
+    body: "Le cœur de notre activité. Découpeurs et opérateurs machines (découpe numérique, machines verticales, encolleuse, broyeuse), couturières en atelier de confection, tapissiers pour le matelassage et l'habillage des sommiers.",
+  },
+  {
+    title: "Qualité et logistique",
+    body: "Les garants de la promesse client. Responsables qualité (contrôle entrant et produit fini), magasiniers (gestion des 5 200 m² de stockage), équipe logistique (expéditions France et Europe), service retour.",
+  },
+  {
+    title: "Achats et relations fournisseurs",
+    body: "Les architectes de notre doctrine d'achat. L'équipe achats sélectionne, négocie et accompagne les partenaires fournisseurs en France, en Europe, et à l'international (Inde, Vietnam, Pologne).",
+  },
+  {
+    title: "Commerce et marketing",
+    body: "Les ambassadeurs des marques. Équipes commerciales B2B (hôteliers, ensembliers Contract) et B2C (marketplaces, sites de marques), équipes marketing (contenus, sites, réseaux sociaux).",
+  },
+  {
+    title: "Fonctions support",
+    body: "Les colonnes vertébrales de l'entreprise. Direction administrative et financière, ressources humaines, IT, juridique. Polyvalence demandée — chez Senso Pur, on n'est pas dans des silos.",
+  },
 ];
 
 const AVANTAGES = [
-  { title: "Mutuelle haut de gamme",      body: "Prise en charge à 70% par l'entreprise." },
-  { title: "Tickets restaurant",           body: "Prise en charge employeur 60%." },
-  { title: "Prime ancienneté",             body: "Reconnaissance de la fidélité, indexée sur les années." },
-  { title: "Aménagements ergonomiques",    body: "Investissement régulier en EPI et postes de travail." },
-  { title: "Formation continue",           body: "Budget formation par collaborateur, axé technique métier." },
-  { title: "Avantage produit",             body: "Tarif préférentiel sur l'ensemble des marques du groupe." },
+  { title: "Rémunération et participation", body: "Prime d'intéressement (100 % des collaborateurs), plan d'épargne entreprise (PEE) avec abondement, tickets-restaurants, chèques cadeaux à chaque anniversaire." },
+  { title: "Santé et prévoyance", body: "Mutuelle d'entreprise mise à jour en 2026 — couverture renforcée. Prévoyance prise en charge. Cours de sport entièrement financés sur le site. Salle de repos." },
+  { title: "Équilibre vie pro / vie perso", body: "Télétravail possible pour les fonctions qui le permettent. Flexibilité des horaires adaptée aux contraintes familiales. Covoiturage facilité. Borne de recharge VE." },
+  { title: "Développement professionnel", body: "Plan de formation structuré. Sensibilisation aux enjeux climatiques (Fresque du Climat). Possibilités de mobilité interne entre les marques." },
+  { title: "Petites attentions qui changent tout", body: "Un matelas Senso Pur offert au terme de la première année. Un livret d'accueil personnalisé pour chaque nouvelle recrue. Espace de pause équipé." },
 ];
 
 export default function Carrieres() {
@@ -43,52 +67,68 @@ export default function Carrieres() {
     <>
       <PageHero
         crumbs={[{ label: "Carrières" }]}
-        eyebrow="REJOIGNEZ-NOUS"
-        title="Faites votre métier — chez nous, on a le temps de bien le faire."
-        subtitle="35 personnes, une usine en croissance, des métiers concrets et durables. Voici pourquoi vous pourriez nous rejoindre."
+        eyebrow="CARRIÈRES"
+        title="Travailler chez Senso Pur, c'est rejoindre une PME industrielle française qui fabrique vraiment, qui respecte ses équipes, et qui a un cap clair."
+        subtitle="35 personnes à Vaulx-Milieu, en Isère. Une famille à la tête, une usine au cœur, des marques en croissance. Si vous cherchez un travail qui se voit, qui se touche, et qui se mesure — vous êtes au bon endroit."
         bgImage="/images/media/media-carrieres-equipe.jpg"
       />
 
-      <PortraitLarge image="/images/media/media-carrieres-equipe.jpg" alt="L'équipe Senso Pur" />
+      <PortraitLarge
+        image="/images/media/media-carrieres-equipe.jpg"
+        alt="L'équipe Senso Pur — Vaulx-Milieu, Isère"
+        caption="L'équipe Senso Pur — Vaulx-Milieu, Isère"
+      />
 
       <FeaturesList
         eyebrow="POURQUOI NOUS"
-        title="Quatre raisons concrètes"
+        title="Quatre raisons de nous rejoindre"
         features={RAISONS}
         layout="2col"
         bg="soft"
       />
 
-      <PortraitLarge image="/images/media/media-carrieres-2.jpg" alt="Atelier" />
+      <PortraitLarge
+        image="/images/media/media-carrieres-2.jpg"
+        alt="Au quotidien dans les ateliers"
+        caption="Au quotidien dans les ateliers — convivialité et savoir-faire"
+      />
 
       <FeaturesList
-        eyebrow="NOS MÉTIERS"
-        title="Sept métiers, une équipe"
+        eyebrow="LES MÉTIERS"
+        title="Les métiers qui font Senso Pur"
+        intro="De l'atelier à la direction, de la couture au marketing — voici les familles de métiers qui composent notre équipe."
         features={METIERS}
         layout="2col"
       />
 
-      <PortraitLarge image="/images/media/media-carrieres-3.jpg" alt="Atelier" />
+      <PortraitLarge
+        image="/images/media/media-carrieres-3.jpg"
+        alt="Une PME familiale qui assume ce qu'elle fabrique"
+        caption="Une PME familiale qui assume ce qu'elle fabrique"
+      />
 
       <FeaturesList
-        eyebrow="AVANTAGES"
-        title="Ce qui vient avec le poste"
+        eyebrow="CONCRÈTEMENT"
+        title="Ce que nous proposons à nos collaborateurs"
+        intro="Pas de charabia RH. Voici ce que vous trouverez vraiment en arrivant."
         features={AVANTAGES}
         layout="3col"
         bg="soft"
       />
 
       <TextBlock
-        eyebrow="VOUS HÉSITEZ ?"
-        title="Pas besoin d'un poste ouvert pour nous écrire"
-        body="Si votre profil croise un de nos métiers, ou même si vous voulez simplement venir voir l'usine, écrivez-nous. Nous lisons toutes les candidatures spontanées et nous répondons systématiquement."
+        eyebrow="UNE QUESTION HONNÊTE"
+        title="Vous hésitez ?"
+        body={`Une PME de 35 personnes en Isère, ce n'est pas pour tout le monde. Si vous cherchez les codes corporate d'un grand groupe, le télétravail à 100 %, ou un environnement où chaque mission est ultra-spécialisée — il y a peut-être un meilleur endroit pour vous.
+
+Mais si vous voulez voir le résultat de votre travail, comprendre comment marche un produit de bout en bout, parler tous les jours avec les personnes qui le fabriquent, et participer à un projet qui a un cap : Senso Pur peut être ce que vous cherchez.`}
       />
 
       <Callout
         eyebrow="POSTULER"
         title="Envoyez-nous votre candidature"
         body="CV + quelques lignes sur votre motivation. Pas besoin de lettre formelle. On préfère lire vrai."
-        cta={{ label: "Postuler par email", href: "mailto:rh@senso-pur.com" }}
+        cta={{ label: "Postuler par email", href: "mailto:recrutement@senso-pur.com" }}
         variant="mahogany"
       />
 
@@ -96,9 +136,9 @@ export default function Carrieres() {
         eyebrow="POUR ALLER PLUS LOIN"
         title="Comprendre où vous arriveriez"
         cards={[
-          { eyebrow: "USINE", title: "Notre fabrication", body: "L'usine, les machines, les métiers en image.", href: "/notre-fabrication" },
-          { eyebrow: "GROUPE", title: "Notre direction", body: "Qui pilote la maison.", href: "/notre-direction" },
-          { eyebrow: "RSE", title: "Engagements", body: "Pourquoi nous travaillons comme ça.", href: "/engagements-rse" },
+          { eyebrow: "L'OUTIL", title: "Visiter notre usine", body: "Les machines, les étapes, les coulisses de Vaulx-Milieu.", href: "/notre-fabrication" },
+          { eyebrow: "LE CAP", title: "Nos engagements RSE", body: "Le détail de nos engagements environnementaux et sociaux.", href: "/engagements-rse" },
+          { eyebrow: "L'ÉQUIPE", title: "Fabien et Marine Bully", body: "La famille à la tête du groupe — vos futurs interlocuteurs.", href: "/notre-direction" },
         ]}
       />
     </>

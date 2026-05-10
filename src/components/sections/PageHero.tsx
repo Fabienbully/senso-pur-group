@@ -25,14 +25,14 @@ export function PageHero({ eyebrow, title, subtitle, crumbs, bgImage }: PageHero
       }}
     >
       {bgImage && (
-        <Parallax speed={0.4} className="absolute inset-0 -z-10">
+        <Parallax speed={0.85} className="absolute inset-0 -z-10">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={bgImage}
             alt=""
             aria-hidden
             className="w-full h-full object-cover opacity-50"
-            style={{ minHeight: "120%" }}
+            style={{ minHeight: "106%" }}
           />
         </Parallax>
       )}

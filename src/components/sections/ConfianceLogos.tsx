@@ -1,4 +1,4 @@
-import { CLIENTS_HOTELLERIE, CLIENTS_MARKETPLACES } from "@/content/home";
+import { CLIENTS_HOTELLERIE, CLIENTS_MARKETPLACES, CONFIANCE } from "@/content/home";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Marquee } from "@/components/animations/Marquee";
 
@@ -30,9 +30,8 @@ export function ConfianceLogos() {
         <p
           id="confiance-title"
           className="sp-eyebrow"
-          style={{ color: "var(--sp-bronze)" }}
         >
-          ILS NOUS FONT CONFIANCE
+          {CONFIANCE.title}
         </p>
       </FadeIn>
 

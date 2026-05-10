@@ -28,13 +28,13 @@ export function PortraitLarge({
             className={`relative overflow-hidden rounded-[var(--sp-radius-lg)] ${aspectClass} bg-[var(--sp-obsidian)]`}
           >
             {parallax ? (
-              <Parallax speed={0.7} className="absolute inset-0">
+              <Parallax speed={0.85} className="absolute inset-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={image}
                   alt={alt}
                   className="w-full h-full object-cover"
-                  style={{ minHeight: "115%" }}
+                  style={{ minHeight: "106%" }}
                 />
               </Parallax>
             ) : (

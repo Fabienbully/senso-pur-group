@@ -6,12 +6,12 @@ import { TextBlock } from "@/components/sections/TextBlock";
 import { ManifesteQuote } from "@/components/sections/ManifesteQuote";
 import { CardsGrid } from "@/components/sections/CardsGrid";
 import { VideoFeature } from "@/components/sections/VideoFeature";
-import { FABIEN, MARINE } from "@/content/direction";
+import { FABIEN, MARINE, HISTOIRE_FAMILLE } from "@/content/direction";
 
 export const metadata: Metadata = {
   title: "Notre direction",
   description:
-    "Fabien Bully a fondé Senso Pur en 2010. Marine Bully, sa sœur, l'a rejoint en 2014 puis a créé Maison Aubertin en 2017. Une famille à la tête du groupe.",
+    "Fabien Bully a fondé Senso Pur en 2010 avec son père. Sa sœur Marine l'a rejoint en 2014, avant de fonder Maison Aubertin trois ans plus tard.",
 };
 
 export default function NotreDirection() {
@@ -19,16 +19,22 @@ export default function NotreDirection() {
     <>
       <PageHero
         crumbs={[{ label: "Le groupe" }, { label: "Notre direction" }]}
-        eyebrow="LE GROUPE"
+        eyebrow="NOTRE DIRECTION"
         title="Une famille à la tête du groupe."
-        subtitle="Deux dirigeants, deux maisons, une même exigence — incarner ce que nous fabriquons."
+        subtitle="Fabien Bully a fondé Senso Pur en 2010 avec son père. Sa sœur Marine l'a rejoint en 2014, avant de fonder Maison Aubertin trois ans plus tard. Trois générations de savoir-faire dans le textile et l'ameublement, deux dirigeants aujourd'hui à la tête du groupe — et une même conviction : on peut fabriquer en France, autrement, sans intermédiaire."
         bgImage="/images/media/media-direction-duo.jpg"
+      />
+
+      <PortraitLarge
+        image="/images/media/media-direction-fabien.jpg"
+        alt="Fabien Bully — fondateur et dirigeant"
+        caption="Fabien Bully — fondateur et dirigeant du groupe Senso Pur"
       />
 
       <PortraitLarge
         image="/images/media/media-direction-duo.jpg"
         alt="Fabien et Marine Bully"
-        caption="Fabien & Marine Bully — Direction Senso Pur Group"
+        caption="Fabien & Marine Bully — Direction du groupe Senso Pur"
       />
 
       <section id="manifeste">
@@ -42,18 +48,15 @@ export default function NotreDirection() {
       <Bio {...MARINE} layout="right" />
 
       <ManifesteQuote
-        quote="Une histoire familiale, un même nom. Trois générations dans le textile et l'ameublement — c'est notre humus, c'est ce qui donne sens à chacune de nos décisions industrielles."
-        author="La famille Bully"
+        quote="Marine Bully prend la parole — Maison Aubertin, c'est l'art de vivre prolongeant le savoir-faire literie. Une vision, un cap — racontés à la première personne."
+        author="LE MOT DE LA DIRECTRICE"
       />
 
       <TextBlock
-        eyebrow="HISTOIRE"
-        title="Une histoire familiale, un même nom"
-        body={`Le textile et l'ameublement traversent notre famille depuis trois générations. Ce que nos parents et grands-parents nous ont transmis, ce n'est pas un savoir-faire isolé — c'est une certaine idée du métier.
-
-Cette idée tient en trois mots : exigence, durée, transmission. Quand Fabien fonde Senso Pur en 2010, il prolonge cette conviction dans le secteur de la literie. Quand Marine crée Maison Aubertin en 2017, elle l'élargit à l'art de vivre.
-
-Nous ne sommes pas des financiers de la literie. Nous sommes une famille qui fabrique en France, qui forme ses équipes, qui assume ses choix de sourcing — et qui accepte d'être jugée sur la durée.`}
+        eyebrow={HISTOIRE_FAMILLE.eyebrow}
+        title={HISTOIRE_FAMILLE.title}
+        body={HISTOIRE_FAMILLE.body}
+        bg="soft"
       />
 
       <CardsGrid
@@ -61,22 +64,22 @@ Nous ne sommes pas des financiers de la literie. Nous sommes une famille qui fab
         title="Continuer la visite"
         cards={[
           {
-            eyebrow: "FABRICATION",
-            title: "Notre usine de Vaulx-Milieu",
-            body: "6 600 m², 35 personnes, 50 000 matelas par an.",
-            href: "/notre-fabrication",
+            eyebrow: "L'ÉQUIPE",
+            title: "35 personnes au quotidien",
+            body: "Découvrez celles et ceux qui font tourner l'usine — ateliers, bureaux, terrain.",
+            href: "/carrieres",
           },
           {
-            eyebrow: "ENGAGEMENTS",
-            title: "Nos engagements RSE",
-            body: "Mousses certifiées, chutes valorisées, six référentiels.",
-            href: "/engagements-rse",
+            eyebrow: "PRESSE",
+            title: "Demander une interview",
+            body: "Contact presse, biographies des dirigeants, kit média téléchargeable.",
+            href: "/espace-presse",
           },
           {
-            eyebrow: "DOCTRINE",
-            title: "Notre doctrine d'achat",
-            body: "Ce que nous fabriquons, co-fabriquons, sélectionnons.",
-            href: "/doctrine-achat",
+            eyebrow: "CARRIÈRES",
+            title: "Rejoindre le groupe",
+            body: "Postes ouverts, culture, avantages collaborateurs, processus de recrutement.",
+            href: "/carrieres",
           },
         ]}
       />

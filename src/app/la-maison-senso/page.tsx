@@ -4,75 +4,103 @@ import { PortraitLarge } from "@/components/sections/PortraitLarge";
 import { TextBlock } from "@/components/sections/TextBlock";
 import { CardsGrid } from "@/components/sections/CardsGrid";
 import { ManifesteQuote } from "@/components/sections/ManifesteQuote";
+import { ChiffresCles } from "@/components/sections/ChiffresCles";
 
 export const metadata: Metadata = {
   title: "La Maison Senso",
   description:
-    "La Maison Senso — la maison historique de literie du groupe, fondée en 2010. Trois marques : Bellecour Literie, Matelas Pour Tous, Olympe. Toute la fabrication à Vaulx-Milieu.",
+    "Trois marques sous une même ombrelle, trois publics, un seul atelier — La Maison Senso porte la fabrication française depuis 2010.",
 };
 
 export default function LaMaisonSenso() {
   return (
     <>
       <PageHero
-        crumbs={[{ label: "Nos maisons", href: "/nos-maisons" }, { label: "La Maison Senso" }]}
-        eyebrow="MAISON HISTORIQUE · DEPUIS 2010"
-        title="La Maison Senso — la literie au cœur du groupe."
-        subtitle="Tout ce qui se dort dans le groupe est fabriqué ici. Trois marques sous une même exigence."
+        crumbs={[
+          { label: "Nos maisons", href: "/nos-maisons" },
+          { label: "La Maison Senso" },
+        ]}
+        eyebrow="NOTRE MAISON HISTORIQUE"
+        title="La Maison Senso, 16 ans de literie fabriquée à Vaulx-Milieu."
+        subtitle="Trois marques sous une même ombrelle, trois publics, un seul atelier. La Maison Senso est l'aînée du groupe — celle par qui tout a commencé en 2010, et celle qui porte aujourd'hui l'essentiel de notre fabrication française."
         bgImage="/images/media/media-maison-senso.jpg"
       />
 
       <PortraitLarge
         image="/images/media/media-maison-senso.jpg"
-        alt="La Maison Senso"
+        alt="L'atelier — Vaulx-Milieu"
         caption="L'atelier — Vaulx-Milieu"
       />
 
       <TextBlock
-        eyebrow="HISTOIRE"
-        title="Une maison fondée sur l'industrie française"
-        body={`Senso Pur a été fondé en 2010 par Fabien Bully avec son père. La Maison Senso prolonge cet héritage : une fabrication intégrée, à Vaulx-Milieu, où chaque matelas du groupe sort de la même chaîne, de la même équipe, du même atelier.
+        eyebrow="UNE MAISON, TROIS PUBLICS"
+        title="Une maison, trois publics"
+        body={`La Maison Senso est née en 2010 à Vaulx-Milieu, autour d'une conviction simple : on peut fabriquer en France des matelas qui durent, sans renoncer à l'accessibilité.
 
-Trois marques portent les produits selon les usages : Bellecour Literie pour l'hôtellerie, Matelas Pour Tous pour le sur-mesure et l'économie circulaire, Olympe pour les sportifs. Une seule fabrication.`}
+Le groupe a été fondé par Fabien Bully avec son père, qui cumulait alors trente ans d'expérience dans les matières premières de la literie. Père et fils ont travaillé ensemble jusqu'en 2020, année où le père a pris une retraite bien méritée à 71 ans. Le savoir-faire, lui, est resté.
+
+Au fil des années, ce savoir-faire s'est élargi. Des matelas hôteliers de Bellecour aux matelas sur-mesure de Matelas Pour Tous, en passant par la collection Olympe pour les sportifs — La Maison Senso a su servir trois publics avec la même exigence de fabrication.`}
+        bg="soft"
       />
 
       <CardsGrid
-        eyebrow="LES TROIS MARQUES"
-        title="Trois univers sous une même fabrication"
+        eyebrow="TROIS MARQUES, TROIS MARCHÉS"
+        title="Trois marques sous une même fabrication"
         cards={[
           {
-            eyebrow: "HÔTELLERIE",
+            eyebrow: "MARQUE PHARE · B2B HÔTELLERIE · B2C HOME",
             title: "Bellecour Literie",
-            body: "Notre marque dédiée aux palaces, hôtels, résidences pro et plein air. Sur-mesure, livraison, installation, SAV.",
-            href: "https://bellecour-literie.com",
+            body: "L'expertise hôtelière de Senso Pur — référence du secteur depuis trente ans, des centaines d'établissements équipés en France et plus de 1 000 clients professionnels accompagnés depuis 2021. Aujourd'hui aussi disponible chez les particuliers qui veulent dormir chez eux comme dans un hôtel.",
+            href: "https://www.bellecour-literie.com",
             external: true,
           },
           {
-            eyebrow: "SUR-MESURE",
+            eyebrow: "B2C · DIY · ÉCONOMIE CIRCULAIRE",
             title: "Matelas Pour Tous",
-            body: "L'atelier sur-mesure et l'économie circulaire — matelas pour bateaux, camping-cars, dimensions atypiques.",
-            href: "/contact",
+            body: "Le do-it-yourself sur mousse et tissus pour les particuliers. C'est aussi l'expression la plus aboutie de notre démarche circulaire : nous remoussons les canapés de nos clients pour leur donner une seconde vie.",
+            href: "https://www.matelas-pour-tous.com/fr",
+            external: true,
           },
           {
-            eyebrow: "PERFORMANCE",
+            eyebrow: "COLLECTION · PERFORMANCE SPORTIVE",
             title: "Olympe",
-            body: "La collection sportifs — matelas pensés pour la récupération musculaire et le maintien postural.",
-            href: "/contact",
+            body: "La performance par le sommeil récupérateur. Un matelas conçu avec et pour les sportifs, parce que la récupération nocturne est le facteur de performance le plus sous-estimé. Olympe est une collection de La Maison Senso, pensée comme un outil au service du corps.",
+            href: "https://lamaisonsenso.com/pages/nos-marques",
+            external: true,
           },
         ]}
       />
 
+      <ChiffresCles />
+
       <ManifesteQuote
-        quote="Une maison, c'est ce que vous laissez derrière vous quand vous éteignez la lumière."
+        quote="La Maison Senso, c'est l'usine qui devient maison. Trois marques, mais une seule équipe qui les fabrique toutes — ici, à Vaulx-Milieu."
+        author="FABIEN BULLY"
+        role="FONDATEUR"
       />
 
       <CardsGrid
         eyebrow="POUR ALLER PLUS LOIN"
         title="Continuer la visite"
         cards={[
-          { eyebrow: "USINE", title: "Notre fabrication", body: "Les sept étapes, les sept machines, les sept métiers.", href: "/notre-fabrication" },
-          { eyebrow: "MAISON", title: "Maison Aubertin", body: "Notre maison sœur, art de vivre.", href: "/maison-aubertin" },
-          { eyebrow: "ENGAGEMENTS", title: "Engagements RSE", body: "Six référentiels, sourcing, transparence.", href: "/engagements-rse" },
+          {
+            eyebrow: "L'AUTRE MAISON",
+            title: "Maison Aubertin",
+            body: "L'art de vivre du groupe : literie, canapés, mobilier, décoration. Incarnée par Marine Bully.",
+            href: "/maison-aubertin",
+          },
+          {
+            eyebrow: "FABRICATION",
+            title: "L'usine de Vaulx-Milieu",
+            body: "Les coulisses, les métiers, le savoir-faire au cœur du groupe.",
+            href: "/notre-fabrication",
+          },
+          {
+            eyebrow: "DIRECTION",
+            title: "Fabien et Marine Bully",
+            body: "La famille à la tête du groupe.",
+            href: "/notre-direction",
+          },
         ]}
       />
     </>
