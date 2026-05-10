@@ -1,0 +1,81 @@
+name: Build & deploy → branch production
+
+# À chaque push sur main, ce workflow build le site Next.js en statique
+# et publie le résultat (HTML compilé) sur la branche `production`.
+# Hostinger est configuré pour cloner cette branche `production`.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # permet de re-déclencher manuellement depuis l'onglet Actions
+
+permissions:
+  contents: write    # nécessaire pour pousser sur la branche production
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout du code source
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Installer les dépendances (npm ci)
+        run: npm ci
+
+      - name: Build statique (Next.js export)
+        run: npm run build
+
+      - name: Ajouter le .htaccess Hostinger
+        run: |
+          cat > out/.htaccess <<'HTACCESS'
+          # Senso Pur Group — config Apache pour Hostinger
+          ErrorDocument 404 /404.html
+
+          <IfModule mod_deflate.c>
+            AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+            AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+            AddOutputFilterByType DEFLATE image/svg+xml font/ttf font/otf font/woff font/woff2
+          </IfModule>
+
+          <IfModule mod_expires.c>
+            ExpiresActive On
+            ExpiresByType text/css                 "access plus 1 year"
+            ExpiresByType application/javascript   "access plus 1 year"
+            ExpiresByType image/jpeg               "access plus 6 months"
+            ExpiresByType image/png                "access plus 6 months"
+            ExpiresByType image/webp               "access plus 6 months"
+            ExpiresByType image/svg+xml            "access plus 6 months"
+            ExpiresByType font/woff2               "access plus 1 year"
+            ExpiresByType text/html                "access plus 1 hour"
+          </IfModule>
+
+          <IfModule mod_headers.c>
+            Header set X-Content-Type-Options "nosniff"
+            Header set X-Frame-Options "SAMEORIGIN"
+            Header set Referrer-Policy "strict-origin-when-cross-origin"
+            Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+          </IfModule>
+          HTACCESS
+
+      - name: Publier sur la branche production
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: production
+          force_orphan: true # historique propre (pas de bloat git)
+          commit_message: "deploy: ${{ github.event.head_commit.message }}"
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
