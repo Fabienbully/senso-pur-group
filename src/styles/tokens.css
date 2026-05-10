@@ -82,5 +82,5 @@
   /* === Layout ======================================================== */
   --sp-container:      min(1280px, 92vw);
   --sp-container-wide: min(1440px, 96vw);
-  --sp-header-h:       88px;
+  --sp-header-h:       108px;
 }

@@ -38,11 +38,9 @@ export function Header() {
   // En haut de la home (hero sombre) : version claire ; après scroll : version sombre.
   // Quand le menu mobile est ouvert, on force la version sombre (le drawer est crème).
   const onLight = scrolled || open;
-  const logoSrc = onLight
-    ? "/images/brand/Senso-Pur-logo-bleu_nuit.svg"
-    : "/images/brand/Senso-Pur-logo-blanc.svg";
+  const textColor = onLight ? "var(--sp-midnight)" : "var(--sp-alabaster)";
   const linkColor = onLight ? "var(--sp-slate)" : "var(--sp-alabaster)";
-  const linkHover = onLight ? "var(--sp-mahogany)" : "var(--sp-pewter)";
+  const linkHover = onLight ? "var(--sp-mahogany)" : "var(--sp-peach-soft)";
   const burgerColor = onLight ? "var(--sp-slate)" : "var(--sp-alabaster)";
 
   return (
@@ -62,20 +60,37 @@ export function Header() {
           className="flex items-center gap-3 shrink-0"
           onClick={() => setOpen(false)}
         >
+          {/* Sigle Senso Pur — arches en pêche poudrée (issu de la charte 2026) */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          {/*
-            width/height = ratio réel du SVG (1860×1582 ≈ 1.176:1).
-            Le style explicite force le navigateur à respecter la contrainte
-            même si le SVG embarque des dimensions énormes (pt) en interne.
-          */}
           <img
-            src={logoSrc}
-            alt="Senso Pur Group"
-            width={42}
-            height={36}
+            src="/images/brand/senso-pur-sigle-peche.png"
+            alt=""
+            aria-hidden
+            width={84}
+            height={72}
             className="transition-opacity duration-500"
-            style={{ height: 36, width: "auto", maxHeight: 36, display: "block" }}
+            style={{ height: 72, width: "auto", maxHeight: 72, display: "block" }}
           />
+          {/* Wordmark — couleur adaptée au fond (crème sur hero sombre, bleu nuit après scroll) */}
+          <span
+            className="font-heading leading-none flex flex-col transition-colors duration-500"
+            style={{ color: textColor }}
+          >
+            <span style={{ fontSize: "1.7rem", fontWeight: 500, letterSpacing: "0.005em" }}>
+              Senso Pur
+            </span>
+            <span
+              style={{
+                fontSize: "0.85rem",
+                fontWeight: 400,
+                letterSpacing: "0.06em",
+                marginTop: "0.15rem",
+                opacity: 0.85,
+              }}
+            >
+              group
+            </span>
+          </span>
         </Link>
 
         <nav
