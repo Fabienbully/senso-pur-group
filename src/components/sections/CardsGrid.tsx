@@ -7,6 +7,8 @@ interface Card {
   body?: string;
   href: string;
   external?: boolean;
+  /** SVG/PNG affiché en filigrane (bottom-right de la carte) */
+  watermark?: string;
 }
 
 interface CardsGridProps {
@@ -35,27 +37,39 @@ export function CardsGrid({ eyebrow, title, cards, bg = "soft" }: CardsGridProps
                 href={c.href}
                 target={c.external ? "_blank" : undefined}
                 rel={c.external ? "noopener noreferrer" : undefined}
-                className="group block h-full p-8 bg-[var(--sp-bg)] rounded-[var(--sp-radius-lg)] border border-[var(--sp-bronze-soft)]/40 hover:border-[var(--sp-pewter)] hover:shadow-[var(--sp-shadow-soft)] transition-all duration-500 hover:-translate-y-1"
-
-
+                className="group relative block h-full p-8 bg-[var(--sp-bg)] rounded-[var(--sp-radius-lg)] border border-[var(--sp-bronze-soft)]/40 hover:border-[var(--sp-pewter)] hover:shadow-[var(--sp-shadow-soft)] transition-all duration-500 hover:-translate-y-1 overflow-hidden"
               >
-                {c.eyebrow && (
-                  <p className="sp-eyebrow mb-4" style={{ fontSize: "0.65rem" }}>
-                    {c.eyebrow}
-                  </p>
+                {c.watermark && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={c.watermark}
+                    alt=""
+                    aria-hidden
+                    className="pointer-events-none select-none absolute -right-6 -bottom-6 w-40 h-auto opacity-[0.07] group-hover:opacity-[0.13] transition-opacity duration-500"
+                  />
                 )}
-                <h3 className="mb-3 text-[var(--sp-mahogany)]" style={{ fontSize: "1.4rem" }}>
-                  {c.title}
-                </h3>
-                {c.body && (
-                  <p className="text-sm text-[var(--sp-slate)] leading-relaxed mb-6">{c.body}</p>
-                )}
-                <span className="inline-flex items-center gap-2 text-sm font-medium text-[var(--sp-pewter)]">
-                  Découvrir{" "}
-                  <span aria-hidden className="transition-transform group-hover:translate-x-1">
-                    →
+
+                <div className="relative z-10">
+                  {c.eyebrow && (
+                    <p className="sp-eyebrow mb-4" style={{ fontSize: "0.65rem" }}>
+                      {c.eyebrow}
+                    </p>
+                  )}
+                  <h3 className="mb-3 text-[var(--sp-mahogany)]" style={{ fontSize: "1.4rem" }}>
+                    {c.title}
+                  </h3>
+                  {c.body && (
+                    <p className="text-sm text-[var(--sp-slate)] leading-relaxed mb-6">
+                      {c.body}
+                    </p>
+                  )}
+                  <span className="inline-flex items-center gap-2 text-sm font-medium text-[var(--sp-pewter)]">
+                    Découvrir{" "}
+                    <span aria-hidden className="transition-transform group-hover:translate-x-1">
+                      →
+                    </span>
                   </span>
-                </span>
+                </div>
               </Link>
             </FadeIn>
           ))}

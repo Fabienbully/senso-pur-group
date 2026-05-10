@@ -53,6 +53,7 @@ Au fil des années, ce savoir-faire s'est élargi. Des matelas hôteliers de Bel
             body: "L'expertise hôtelière de Senso Pur — référence du secteur depuis trente ans, des centaines d'établissements équipés en France et plus de 1 000 clients professionnels accompagnés depuis 2021. Aujourd'hui aussi disponible chez les particuliers qui veulent dormir chez eux comme dans un hôtel.",
             href: "https://www.bellecour-literie.com",
             external: true,
+            watermark: "/images/brand/bellecour-sigle.svg",
           },
           {
             eyebrow: "B2C · DIY · ÉCONOMIE CIRCULAIRE",
