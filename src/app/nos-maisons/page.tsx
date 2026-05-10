@@ -43,7 +43,7 @@ export default function NosMaisons() {
                   <img
                     src={m.image}
                     alt={m.name}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.05]"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.02]"
                   />
                   <div
                     className="absolute inset-0"

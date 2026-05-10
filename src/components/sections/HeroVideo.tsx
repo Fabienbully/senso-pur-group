@@ -12,7 +12,7 @@ export function HeroVideo() {
       className="sp-hero relative isolate"
       aria-labelledby="hero-title"
       style={{
-        minHeight: "100svh",
+        minHeight: "88svh",
         background: "var(--sp-obsidian)",
         color: "var(--sp-alabaster)",
         overflow: "hidden",
@@ -48,7 +48,7 @@ export function HeroVideo() {
       <div className="sp-grain -z-10" aria-hidden />
 
       {/* Content */}
-      <div className="sp-container relative h-[100svh] flex flex-col justify-center pt-[var(--sp-header-h)]">
+      <div className="sp-container relative h-[88svh] flex flex-col justify-center pt-[var(--sp-header-h)]">
         <p
           className="sp-eyebrow text-[var(--sp-pewter)] mb-8 sp-hero__eyebrow"
           style={{

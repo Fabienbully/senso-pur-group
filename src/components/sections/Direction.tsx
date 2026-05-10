@@ -11,13 +11,13 @@ export function Direction() {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <FadeIn className="lg:col-span-7 relative">
             <div className="relative overflow-hidden rounded-[var(--sp-radius-lg)] aspect-[4/5] md:aspect-[5/4] bg-[var(--sp-obsidian)]">
-              <Parallax speed={0.85} className="absolute inset-0">
+              <Parallax speed={0.95} className="absolute inset-0">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={DIRECTION.image}
                   alt="Fabien et Marine Bully"
                   className="w-full h-full object-cover"
-                  style={{ minHeight: "106%" }}
+                  style={{ minHeight: "102%" }}
                 />
               </Parallax>
               <div
