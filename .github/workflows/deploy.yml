@@ -1,8 +1,8 @@
-name: Build & deploy → branch production
+name: Build & deploy → branch deploy
 
 # À chaque push sur main, ce workflow build le site Next.js en statique
-# et publie le résultat (HTML compilé) sur la branche `production`.
-# Hostinger est configuré pour cloner cette branche `production`.
+# et publie le résultat (HTML compilé) sur la branche `deploy`.
+# Hostinger est configuré pour cloner cette branche `deploy`.
 
 on:
   push:
@@ -10,10 +10,10 @@ on:
   workflow_dispatch: # permet de re-déclencher manuellement depuis l'onglet Actions
 
 permissions:
-  contents: write    # nécessaire pour pousser sur la branche production
+  contents: write    # nécessaire pour pousser sur la branche deploy
 
 concurrency:
-  group: deploy-production
+  group: deploy-deploy
   cancel-in-progress: true
 
 jobs:
@@ -69,12 +69,12 @@ jobs:
           </IfModule>
           HTACCESS
 
-      - name: Publier sur la branche production
+      - name: Publier sur la branche deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
-          publish_branch: production
+          publish_branch: deploy
           force_orphan: true # historique propre (pas de bloat git)
           commit_message: "deploy: ${{ github.event.head_commit.message }}"
           user_name: "github-actions[bot]"
