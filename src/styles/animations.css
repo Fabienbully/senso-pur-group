@@ -1,0 +1,105 @@
+/* Senso Pur — Animations globales (keyframes + classes utilitaires) */
+
+@keyframes sp-fade-up {
+  from { opacity: 0; transform: translate3d(0, 22px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes sp-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes sp-eyebrow-spread {
+  from { letter-spacing: 0;       opacity: 0; }
+  to   { letter-spacing: 0.22em;  opacity: 1; }
+}
+
+@keyframes sp-scroll-cue {
+  0%   { transform: scaleY(0); transform-origin: top;    opacity: 0.2; }
+  50%  { transform: scaleY(1); transform-origin: top;    opacity: 1;   }
+  51%  { transform: scaleY(1); transform-origin: bottom; opacity: 1;   }
+  100% { transform: scaleY(0); transform-origin: bottom; opacity: 0.2; }
+}
+
+@keyframes sp-ken-burns {
+  0%   { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.08) translate(-1.5%, -1.5%); }
+}
+
+@keyframes sp-shimmer-sweep {
+  0%   { transform: translateX(-120%) skewX(-12deg); }
+  100% { transform: translateX(220%)  skewX(-12deg); }
+}
+
+@keyframes sp-marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes sp-pulse-soft {
+  0%, 100% { transform: scale(1);    opacity: 0.7; }
+  50%      { transform: scale(1.05); opacity: 1;   }
+}
+
+@keyframes sp-grain {
+  0%, 100% { transform: translate(0, 0); }
+  10%      { transform: translate(-5%, -10%); }
+  20%      { transform: translate(-15%, 5%); }
+  30%      { transform: translate(7%, -25%); }
+  40%      { transform: translate(-5%, 25%); }
+  50%      { transform: translate(-15%, 10%); }
+  60%      { transform: translate(15%, 0%); }
+  70%      { transform: translate(0%, 15%); }
+  80%      { transform: translate(3%, 35%); }
+  90%      { transform: translate(-10%, 10%); }
+}
+
+/* ========== Wrappers IntersectionObserver ========== */
+.sp-anim-prepare {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition:
+    opacity var(--sp-dur-cinema) var(--sp-ease-cinema),
+    transform var(--sp-dur-cinema) var(--sp-ease-cinema);
+  transition-delay: var(--sp-anim-delay, 0ms);
+  will-change: opacity, transform;
+}
+.sp-anim-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* ========== Mask reveal (titres ligne par ligne) ========== */
+.sp-mask-line {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+.sp-mask-line > span {
+  display: inline-block;
+  transform: translate3d(0, 110%, 0);
+  transition: transform 1100ms var(--sp-ease-cinema);
+  transition-delay: var(--sp-anim-delay, 0ms);
+}
+.sp-mask-in > span { transform: translate3d(0, 0, 0); }
+
+/* ========== Reduced motion ========== */
+@media (prefers-reduced-motion: reduce) {
+  .sp-anim-prepare,
+  .sp-anim-in,
+  .sp-mask-line > span,
+  .sp-mask-in > span {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

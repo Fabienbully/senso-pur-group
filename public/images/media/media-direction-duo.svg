@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Direction Senso Pur — Fabien & Marine Bully">
+  <defs>
+    <linearGradient id="dd-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#304E4D"/>
+      <stop offset="100%" stop-color="#1B2824"/>
+    </linearGradient>
+    <radialGradient id="dd-light" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#99B3B7" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#1B2824" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#dd-bg)"/>
+  <rect width="1600" height="900" fill="url(#dd-light)"/>
+
+  <!-- Subtle stage line -->
+  <line x1="80" y1="650" x2="1520" y2="650" stroke="#99B3B7" stroke-width="0.6" opacity="0.35"/>
+
+  <!-- Left figure (silhouette abstract — facing right) -->
+  <g transform="translate(450 250)" fill="#EEECE9" opacity="0.92">
+    <!-- Head -->
+    <circle cx="50" cy="50" r="65"/>
+    <!-- Shoulders -->
+    <path d="M -100 280 Q -100 150 50 130 Q 200 150 200 280 L 200 380 L -100 380 Z"/>
+  </g>
+  <!-- Left figure depth shading -->
+  <g transform="translate(450 250)" fill="#99B3B7" opacity="0.18">
+    <path d="M -10 50 Q -10 -15 50 -15 Q 50 -15 50 115 Q -10 115 -10 50"/>
+    <path d="M -100 280 Q -100 150 50 130 L 50 380 L -100 380 Z"/>
+  </g>
+
+  <!-- Right figure (facing left) -->
+  <g transform="translate(950 250)" fill="#EEECE9" opacity="0.92">
+    <circle cx="50" cy="50" r="62"/>
+    <path d="M -100 280 Q -100 150 50 130 Q 200 150 200 280 L 200 380 L -100 380 Z"/>
+  </g>
+  <g transform="translate(950 250)" fill="#9D7960" opacity="0.18">
+    <path d="M 50 -12 Q 110 -12 110 50 Q 110 115 50 115 Z"/>
+    <path d="M 50 130 Q 200 150 200 280 L 200 380 L 50 380 Z"/>
+  </g>
+
+  <!-- Centerpiece — Senso Pur arche signature between them -->
+  <g transform="translate(800 380)" fill="none" stroke="#99B3B7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M -80 100 Q -80 -40 0 -40 Q 80 -40 80 100"/>
+    <path d="M -48 100 Q -48 -8 0 -8 Q 48 -8 48 100"/>
+    <line x1="-80" y1="100" x2="-80" y2="125"/>
+    <line x1="80"  y1="100" x2="80"  y2="125"/>
+    <line x1="-48" y1="100" x2="-48" y2="125"/>
+    <line x1="48"  y1="100" x2="48"  y2="125"/>
+  </g>
+
+  <!-- Connecting hairline (suggesting dialogue) -->
+  <line x1="540" y1="300" x2="1060" y2="300" stroke="#99B3B7" stroke-width="0.6" opacity="0.35" stroke-dasharray="2 6"/>
+
+  <!-- Captions -->
+  <text x="500"  y="745" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="500" font-size="34" fill="#EEECE9">Fabien Bully</text>
+  <text x="500"  y="775" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="600" font-size="11" letter-spacing="4" fill="#99B3B7" opacity="0.85">FONDATEUR &amp; DIRIGEANT</text>
+
+  <text x="1100" y="745" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="500" font-size="34" fill="#EEECE9">Marine Bully</text>
+  <text x="1100" y="775" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="600" font-size="11" letter-spacing="4" fill="#99B3B7" opacity="0.85">DIRECTION MAISON AUBERTIN</text>
+
+  <!-- Title -->
+  <text x="800" y="120" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="600" font-size="11" letter-spacing="6" fill="#99B3B7" opacity="0.78">UNE FAMILLE · DEUX MAISONS · UN SAVOIR-FAIRE</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Maison Aubertin Contract — offre clé en main">
+  <defs>
+    <linearGradient id="ac-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EEECE9"/>
+      <stop offset="100%" stop-color="#E3D8C7"/>
+    </linearGradient>
+    <linearGradient id="ac-wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9D7960"/>
+      <stop offset="100%" stop-color="#6E3D23"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#ac-bg)"/>
+
+  <!-- Wall panel (headboard area) -->
+  <rect x="200" y="120" width="800" height="380" fill="url(#ac-wall)" opacity="0.85"/>
+  <line x1="200" y1="500" x2="1000" y2="500" stroke="#1B2824" stroke-width="2" opacity="0.4"/>
+
+  <!-- Wall lamps (sconces) -->
+  <g fill="#EEECE9" opacity="0.92">
+    <ellipse cx="270" cy="240" rx="22" ry="12"/>
+    <ellipse cx="930" cy="240" rx="22" ry="12"/>
+  </g>
+  <g fill="#99B3B7" opacity="0.45">
+    <circle cx="270" cy="240" r="38"/>
+    <circle cx="930" cy="240" r="38"/>
+  </g>
+
+  <!-- Wall art frames -->
+  <g stroke="#EEECE9" stroke-width="3" fill="#EEECE9" opacity="0.18">
+    <rect x="380" y="180" width="180" height="140"/>
+    <rect x="640" y="180" width="180" height="140"/>
+  </g>
+
+  <!-- Bed base -->
+  <rect x="220" y="500" width="760" height="160" rx="6" fill="#EEECE9" stroke="#9D7960" stroke-width="1"/>
+
+  <!-- Mattress -->
+  <rect x="240" y="450" width="720" height="80" rx="10" fill="#EEECE9" stroke="#9D7960" stroke-width="1.4"/>
+  <line x1="260" y1="465" x2="940" y2="465" stroke="#9D7960" stroke-width="0.6" opacity="0.5"/>
+  <line x1="260" y1="478" x2="940" y2="478" stroke="#9D7960" stroke-width="0.6" opacity="0.5"/>
+  <line x1="260" y1="491" x2="940" y2="491" stroke="#9D7960" stroke-width="0.6" opacity="0.5"/>
+  <line x1="260" y1="504" x2="940" y2="504" stroke="#9D7960" stroke-width="0.6" opacity="0.5"/>
+  <line x1="260" y1="517" x2="940" y2="517" stroke="#9D7960" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- Linen cover folded back -->
+  <rect x="240" y="525" width="720" height="40" fill="#99B3B7" opacity="0.55"/>
+
+  <!-- Pillows (4) -->
+  <g>
+    <rect x="280" y="385" width="160" height="80" rx="14" fill="#EEECE9" stroke="#9D7960" stroke-width="1"/>
+    <rect x="450" y="385" width="160" height="80" rx="14" fill="#EEECE9" stroke="#9D7960" stroke-width="1"/>
+    <rect x="620" y="395" width="140" height="70" rx="12" fill="#EEECE9" stroke="#9D7960" stroke-width="1"/>
+    <rect x="770" y="395" width="140" height="70" rx="12" fill="#EEECE9" stroke="#9D7960" stroke-width="1"/>
+  </g>
+
+  <!-- Bedside tables -->
+  <g fill="#6E3D23">
+    <rect x="80"   y="550" width="120" height="14"/>
+    <rect x="100"  y="564" width="6"   height="100"/>
+    <rect x="180"  y="564" width="6"   height="100"/>
+    <line x1="80"  y1="664" x2="200" y2="664" stroke="#6E3D23" stroke-width="3"/>
+
+    <rect x="1000" y="550" width="120" height="14"/>
+    <rect x="1020" y="564" width="6"   height="100"/>
+    <rect x="1100" y="564" width="6"   height="100"/>
+    <line x1="1000" y1="664" x2="1120" y2="664" stroke="#6E3D23" stroke-width="3"/>
+  </g>
+
+  <!-- Floor line -->
+  <line x1="0" y1="700" x2="1200" y2="700" stroke="#9D7960" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Tag -->
+  <g transform="translate(40 60)">
+    <rect width="220" height="40" rx="20" fill="#6E3D23"/>
+    <text x="110" y="26" text-anchor="middle" font-family="'Manrope', sans-serif" font-weight="700" font-size="11" letter-spacing="4" fill="#EEECE9">NOUVEAU · 2025</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="755" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-weight="500" font-size="32" fill="#6E3D23">Maison Aubertin Contract</text>
+</svg>
