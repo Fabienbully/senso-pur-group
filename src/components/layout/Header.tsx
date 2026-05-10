@@ -63,12 +63,18 @@ export function Header() {
           onClick={() => setOpen(false)}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
+          {/*
+            width/height = ratio réel du SVG (1860×1582 ≈ 1.176:1).
+            Le style explicite force le navigateur à respecter la contrainte
+            même si le SVG embarque des dimensions énormes (pt) en interne.
+          */}
           <img
             src={logoSrc}
             alt="Senso Pur Group"
-            width={160}
-            height={48}
-            className="h-9 w-auto transition-opacity duration-500"
+            width={42}
+            height={36}
+            className="transition-opacity duration-500"
+            style={{ height: 36, width: "auto", maxHeight: 36, display: "block" }}
           />
         </Link>
 
